@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="9" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-12T19:02:04 IST" name="Suite" finished-at="2021-05-12T19:10:40 IST" duration-ms="515753">
+    <groups>
+    </groups>
+    <test started-at="2021-05-12T19:02:04 IST" name="Test" finished-at="2021-05-12T19:10:40 IST" duration-ms="515753">
+      <class name="TestCases.TU9_TC_01">
+        <test-method is-config="true" signature="pre()[pri:0, instance:TestCases.TU9_TC_01@2bbf180e]" started-at="2021-05-12T19:03:49 IST" name="pre" finished-at="2021-05-12T19:04:00 IST" duration-ms="11323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestSelectHotel()[pri:0, instance:TestCases.TU9_TC_01@2bbf180e]" started-at="2021-05-12T19:04:00 IST" name="TestSelectHotel" finished-at="2021-05-12T19:10:38 IST" duration-ms="398274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSelectHotel -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:TestCases.TU9_TC_01@2bbf180e]" started-at="2021-05-12T19:10:38 IST" name="peerdown" finished-at="2021-05-12T19:10:40 IST" duration-ms="1457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- TestCases.TU9_TC_01 -->
+      <class name="TestCases.TU3_TC_01">
+        <test-method is-config="true" signature="pre()[pri:0, instance:TestCases.TU3_TC_01@1a04f701]" started-at="2021-05-12T19:02:35 IST" name="pre" finished-at="2021-05-12T19:02:49 IST" duration-ms="14364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestLogin()[pri:0, instance:TestCases.TU3_TC_01@1a04f701]" started-at="2021-05-12T19:02:49 IST" name="TestLogin" finished-at="2021-05-12T19:02:57 IST" duration-ms="7529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:TestCases.TU3_TC_01@1a04f701]" started-at="2021-05-12T19:02:57 IST" name="peerdown" finished-at="2021-05-12T19:02:58 IST" duration-ms="1363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- TestCases.TU3_TC_01 -->
+      <class name="TestCases.TU4_TC_01">
+        <test-method is-config="true" signature="pre()[pri:0, instance:TestCases.TU4_TC_01@4e91d63f]" started-at="2021-05-12T19:02:58 IST" name="pre" finished-at="2021-05-12T19:03:13 IST" duration-ms="15195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestSupport()[pri:0, instance:TestCases.TU4_TC_01@4e91d63f]" started-at="2021-05-12T19:03:13 IST" name="TestSupport" finished-at="2021-05-12T19:03:14 IST" duration-ms="789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSupport -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:TestCases.TU4_TC_01@4e91d63f]" started-at="2021-05-12T19:03:14 IST" name="peerdown" finished-at="2021-05-12T19:03:15 IST" duration-ms="951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- TestCases.TU4_TC_01 -->
+      <class name="TestCases.TU8_TC_05">
+        <test-method is-config="true" signature="pre()[pri:0, instance:TestCases.TU8_TC_05@d4342c2]" started-at="2021-05-12T19:03:15 IST" name="pre" finished-at="2021-05-12T19:03:28 IST" duration-ms="13085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestDestination()[pri:0, instance:TestCases.TU8_TC_05@d4342c2]" started-at="2021-05-12T19:03:28 IST" name="TestDestination" finished-at="2021-05-12T19:03:47 IST" duration-ms="19135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestDestination -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:TestCases.TU8_TC_05@d4342c2]" started-at="2021-05-12T19:03:47 IST" name="peerdown" finished-at="2021-05-12T19:03:49 IST" duration-ms="1308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- TestCases.TU8_TC_05 -->
+      <class name="TestCases.TU2_TC_01">
+        <test-method is-config="true" signature="report()[pri:0, instance:TestCases.TU2_TC_01@4df50bcc]" started-at="2021-05-12T19:02:04 IST" name="report" finished-at="2021-05-12T19:02:04 IST" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method is-config="true" signature="pre()[pri:0, instance:TestCases.TU2_TC_01@4df50bcc]" started-at="2021-05-12T19:02:04 IST" name="pre" finished-at="2021-05-12T19:02:20 IST" duration-ms="15573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestSignUp()[pri:0, instance:TestCases.TU2_TC_01@4df50bcc]" started-at="2021-05-12T19:02:20 IST" name="TestSignUp" finished-at="2021-05-12T19:02:32 IST" duration-ms="12501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSignUp -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:TestCases.TU2_TC_01@4df50bcc]" started-at="2021-05-12T19:02:32 IST" name="peerdown" finished-at="2021-05-12T19:02:35 IST" duration-ms="2442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- TestCases.TU2_TC_01 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
