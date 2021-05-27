@@ -1,78 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="4" total="9" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-13T14:46:06 IST" name="Default suite" finished-at="2021-05-13T14:46:33 IST" duration-ms="26398">
+  <suite started-at="2021-05-27T14:42:06 IST" name="Suite" finished-at="2021-05-27T14:50:39 IST" duration-ms="512684">
     <groups>
     </groups>
-    <test started-at="2021-05-13T14:46:06 IST" name="Default test" finished-at="2021-05-13T14:46:33 IST" duration-ms="26398">
-      <class name="TestCases.Google_Compaign">
-        <test-method is-config="true" signature="report()[pri:0, instance:TestCases.Google_Compaign@37858383]" started-at="2021-05-13T14:46:06 IST" name="report" finished-at="2021-05-13T14:46:07 IST" duration-ms="302" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method is-config="true" signature="pre()[pri:0, instance:TestCases.Google_Compaign@37858383]" started-at="2021-05-13T14:46:07 IST" name="pre" finished-at="2021-05-13T14:46:10 IST" duration-ms="3514" status="PASS">
+    <test started-at="2021-05-27T14:42:06 IST" name="Test" finished-at="2021-05-27T14:50:39 IST" duration-ms="512684">
+      <class name="TestCases.TU9_TC_01">
+        <test-method is-config="true" signature="pre()[pri:0, instance:TestCases.TU9_TC_01@60d8c9b7]" started-at="2021-05-27T14:44:28 IST" name="pre" finished-at="2021-05-27T14:44:46 IST" duration-ms="17708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pre -->
-        <test-method signature="TestGoogle()[pri:0, instance:TestCases.Google_Compaign@37858383]" started-at="2021-05-13T14:46:10 IST" name="TestGoogle" finished-at="2021-05-13T14:46:32 IST" duration-ms="21718" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "Object.getClass()" because "obj" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "obj" is null
-at java.base/java.lang.reflect.Method.invoke(Method.java:557)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-at POM.POM_Gooogle_Compaign.VisitSite(POM_Gooogle_Compaign.java:66)
-at TestCases.Google_Compaign.TestGoogle(Google_Compaign.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="TestSelectHotel()[pri:0, instance:TestCases.TU9_TC_01@60d8c9b7]" started-at="2021-05-27T14:44:46 IST" name="TestSelectHotel" finished-at="2021-05-27T14:50:38 IST" duration-ms="352182" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestGoogle -->
-        <test-method is-config="true" signature="peerdown()[pri:0, instance:TestCases.Google_Compaign@37858383]" started-at="2021-05-13T14:46:32 IST" name="peerdown" finished-at="2021-05-13T14:46:33 IST" duration-ms="811" status="PASS">
+        </test-method> <!-- TestSelectHotel -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:TestCases.TU9_TC_01@60d8c9b7]" started-at="2021-05-27T14:50:38 IST" name="peerdown" finished-at="2021-05-27T14:50:39 IST" duration-ms="568" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- peerdown -->
-      </class> <!-- TestCases.Google_Compaign -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- TestCases.TU9_TC_01 -->
+      <class name="TestCases.TU3_TC_01">
+        <test-method is-config="true" signature="pre()[pri:0, instance:TestCases.TU3_TC_01@3cc2931c]" started-at="2021-05-27T14:42:42 IST" name="pre" finished-at="2021-05-27T14:43:08 IST" duration-ms="25958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestLogin()[pri:0, instance:TestCases.TU3_TC_01@3cc2931c]" started-at="2021-05-27T14:43:08 IST" name="TestLogin" finished-at="2021-05-27T14:43:13 IST" duration-ms="5170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:TestCases.TU3_TC_01@3cc2931c]" started-at="2021-05-27T14:43:13 IST" name="peerdown" finished-at="2021-05-27T14:43:13 IST" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- TestCases.TU3_TC_01 -->
+      <class name="TestCases.TU4_TC_01">
+        <test-method is-config="true" signature="pre()[pri:0, instance:TestCases.TU4_TC_01@20d28811]" started-at="2021-05-27T14:43:13 IST" name="pre" finished-at="2021-05-27T14:43:34 IST" duration-ms="20949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestSupport()[pri:0, instance:TestCases.TU4_TC_01@20d28811]" started-at="2021-05-27T14:43:34 IST" name="TestSupport" finished-at="2021-05-27T14:43:39 IST" duration-ms="4736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSupport -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:TestCases.TU4_TC_01@20d28811]" started-at="2021-05-27T14:43:39 IST" name="peerdown" finished-at="2021-05-27T14:43:39 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- TestCases.TU4_TC_01 -->
+      <class name="TestCases.TU8_TC_05">
+        <test-method is-config="true" signature="pre()[pri:0, instance:TestCases.TU8_TC_05@3967e60c]" started-at="2021-05-27T14:43:39 IST" name="pre" finished-at="2021-05-27T14:44:14 IST" duration-ms="34523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestDestination()[pri:0, instance:TestCases.TU8_TC_05@3967e60c]" started-at="2021-05-27T14:44:14 IST" name="TestDestination" finished-at="2021-05-27T14:44:28 IST" duration-ms="13931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestDestination -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:TestCases.TU8_TC_05@3967e60c]" started-at="2021-05-27T14:44:28 IST" name="peerdown" finished-at="2021-05-27T14:44:28 IST" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- TestCases.TU8_TC_05 -->
+      <class name="TestCases.TU2_TC_01">
+        <test-method is-config="true" signature="report()[pri:0, instance:TestCases.TU2_TC_01@59d016c9]" started-at="2021-05-27T14:42:06 IST" name="report" finished-at="2021-05-27T14:42:06 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method is-config="true" signature="pre()[pri:0, instance:TestCases.TU2_TC_01@59d016c9]" started-at="2021-05-27T14:42:06 IST" name="pre" finished-at="2021-05-27T14:42:31 IST" duration-ms="24468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestSignUp()[pri:0, instance:TestCases.TU2_TC_01@59d016c9]" started-at="2021-05-27T14:42:31 IST" name="TestSignUp" finished-at="2021-05-27T14:42:41 IST" duration-ms="10222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSignUp -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:TestCases.TU2_TC_01@59d016c9]" started-at="2021-05-27T14:42:41 IST" name="peerdown" finished-at="2021-05-27T14:42:42 IST" duration-ms="842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- TestCases.TU2_TC_01 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

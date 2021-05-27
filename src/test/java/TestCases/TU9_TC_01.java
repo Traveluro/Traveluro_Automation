@@ -8,7 +8,7 @@ import com.aventstack.extentreports.Status;
 import POM.POM_TU3_TC_01;
 import POM.POM_TU8_TC_05;
 import POM.POM_TU9_TC_01;
-
+@Listeners(Listener.class)
 public class TU9_TC_01 extends Base {
 @Test
 public void TestSelectHotel() throws InterruptedException

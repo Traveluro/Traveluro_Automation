@@ -1,11 +1,12 @@
 package TestCases;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
 import POM.POM_TU8_TC_05;
-
+@Listeners(Listener.class)
 public class TU8_TC_05 extends Base {
 @Test
 public void TestDestination() throws InterruptedException

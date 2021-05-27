@@ -1,11 +1,12 @@
 package TestCases;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
 import POM.POM_TU4_TC_01;
-
+@Listeners(Listener.class)
 public class TU4_TC_01 extends Base {
 @Test
 public void TestSupport()
