@@ -2,6 +2,7 @@ package POM;
 
 import java.util.List;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,18 +17,21 @@ PageFactory.initElements(driver, this);
 }
 @FindBy(id = "myInput")
 WebElement dept;
-@FindBy(xpath = "//span")
+@FindBy(xpath = "//div")
 List<WebElement> list;
 public void Bookings() {
 	dept.click();
-	dept.sendKeys("Bang");
+	dept.sendKeys("calif");
+	
 	for(int i=0; i<list.size();i++)
 	{
 		String s=list.get(i).getText();
-		if(s.contains("Karnataka"))
+		
+		if(s.contains("CA, USA"))
 				{
 			list.get(i).click();
 				}
+		
 	}
 	
 }

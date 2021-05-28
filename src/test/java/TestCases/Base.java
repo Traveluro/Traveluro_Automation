@@ -31,13 +31,15 @@ public class Base {
 	public static ExtentTest logger4;
 	public static ExtentTest logger5;
 	public static ExtentTest logger6;
+	public static ExtentTest logger7;
+	public static ExtentTest logger8;
 	@BeforeTest
 	public void report()
 	{
 		rep=new ExtentHtmlReporter("./test-output/Report.html");
 		event=new ExtentReports();
 		event.attachReporter(rep);
-		event.setSystemInfo("hostname", "Len0vo");
+		event.setSystemInfo("hostname", "Lenovo");
 		event.setSystemInfo("Encvironment", "QA");
 		event.setSystemInfo("Test Phase", "Sanity");
 		event.setSystemInfo("Tester", "Abhilash Gowda");
@@ -84,7 +86,7 @@ public class Base {
 	public void peerdown()
 	{
 		event.flush();
-		driver.quit();
+		//driver.quit();
 	}
 public static void screenshot() {
 		

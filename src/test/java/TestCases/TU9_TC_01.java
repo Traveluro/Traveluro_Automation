@@ -28,7 +28,7 @@ public void TestSelectHotel() throws InterruptedException
 	p.GO();
 	logger5.log(Status.PASS, "Click on go button and list of hotels page is displyed");
 	Thread.sleep(1000);
-	POM_TU9_TC_01 p1=new POM_TU9_TC_01(driver);
+	/*POM_TU9_TC_01 p1=new POM_TU9_TC_01(driver);
 	p1.View();
 	logger5.log(Status.PASS, "Select the proper hotel and click on view button and shows the details of f hotel page is displyed");
 	Thread.sleep(1000);
@@ -74,6 +74,6 @@ public void TestSelectHotel() throws InterruptedException
 	//p1.BookRoom();
 	logger5.log(Status.PASS, "Click on the Final Book Room button, finally Thank you page is displayed");
 	
-
+*/
 }
 }
