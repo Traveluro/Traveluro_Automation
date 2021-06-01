@@ -1,17 +1,18 @@
 package TestCases;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
 import POM.POM_TU8_TC_05;
 import POM.POM_TU9_TC_01;
-
+@Listeners(Listener.class)
 public class LP extends Base{
 @Test
 public void TestLP() throws InterruptedException
 {
-	logger8 =event.createTest("Select the Hotel and Booking");
+	logger8 =event.createTest("Landing Page");
 	POM_TU8_TC_05 p=new POM_TU8_TC_05(driver);
 	p.Bookings();
 	logger8.log(Status.PASS, "Proper location name is selected from destination drop down list");

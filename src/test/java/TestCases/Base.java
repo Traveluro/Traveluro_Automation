@@ -20,6 +20,8 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import Utilities.ReadConfig;
+
 public class Base {
 	public static WebDriver driver;
 	public static ExtentReports event;
@@ -33,6 +35,16 @@ public class Base {
 	public static ExtentTest logger6;
 	public static ExtentTest logger7;
 	public static ExtentTest logger8;
+	ReadConfig r;
+	String FirstName;
+	String LastNaame;
+	String Email;
+	String ConfirmEmail;
+	String Phone;
+	String CreditCard;
+	String CVV;
+	String Zipcode;
+	
 	@BeforeTest
 	public void report()
 	{
@@ -56,7 +68,16 @@ public class Base {
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.traveluroqa.com/");
+		driver.get("https://www.traveluro.com/");
+		r=new ReadConfig();
+		FirstName=r.First_name();
+		LastNaame=r.Last_name();
+		Email=r.Email();
+		ConfirmEmail=r.Confirmation_Email();
+		Phone=r.Phone();
+		Zipcode=r.Zipcode();
+		CreditCard=r.Credit_Card();
+		CVV=r.CVV();
 }
 
 	public static void getResult(ITestResult result){

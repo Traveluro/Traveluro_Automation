@@ -11,7 +11,7 @@ public class TU8_TC_05 extends Base {
 @Test
 public void TestDestination() throws InterruptedException
 {
-	logger4=event.createTest("Search");
+	logger4=event.createTest("Search Page");
 	POM_TU8_TC_05 p=new POM_TU8_TC_05(driver);
 	p.Bookings();
 	logger4.log(Status.PASS, "Selected the perticuler destination");

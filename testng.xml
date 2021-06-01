@@ -11,6 +11,8 @@
      <class name="TestCases.TU3_TC_01"/>
      <class name="TestCases.TU4_TC_01"/>
       <class name="TestCases.TU8_TC_05"/>
+      	<class name="TestCases.HAC"/>
+ 	<class name="TestCases.LP"/>
         <class name="TestCases.TU9_TC_01"/>
     </classes>
   </test> <!-- Test -->

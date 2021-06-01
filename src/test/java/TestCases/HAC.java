@@ -11,7 +11,7 @@ import POM.POM_TU8_TC_05;
 public class HAC extends Base {
 @Test
 public void TestHAC() throws InterruptedException {
-	logger7 =event.createTest("Select the Hotel and Booking");
+	logger7 =event.createTest("Hotel availability");
 	POM_TU8_TC_05 p=new POM_TU8_TC_05(driver);
 	p.Bookings();
 	logger7.log(Status.PASS, "Proper location name is selected from destination drop down list");

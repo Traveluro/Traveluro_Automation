@@ -47,29 +47,29 @@ public void BookNow() {
 	}
 @FindBy(xpath = "//*[@name='FirstName']")
 WebElement First_name;
-public void FirstName() {
+public void FirstName(String a) {
 	WebDriverWait w=new WebDriverWait(driver, 30);
 	w.until(ExpectedConditions.elementToBeClickable(First_name)).click();
 	//First_name.click();
-	First_name.sendKeys("Suresh");
+	First_name.sendKeys(a);
 }
 @FindBy(xpath = "//*[@id='LastName']")
 WebElement Last_name;
-public void LastName() {
+public void LastName(String a) {
 	Last_name.click();
-	Last_name.sendKeys("Gowda");
+	Last_name.sendKeys(a);
 }
 @FindBy(id="Email")
 WebElement email;
-public void Email() {
+public void Email(String a) {
 	email.click();
-	email.sendKeys("sureshgowda11@gmail.com");
+	email.sendKeys(a);
 }
 @FindBy(xpath = "//*[@id='EmailConfirm']")
 WebElement confirmmail;
-public void ConfirmMail() {
+public void ConfirmMail(String a) {
 	
-	confirmmail.sendKeys("sureshgowda11@gmail.com");
+	confirmmail.sendKeys(a);
 }
 	@FindBy(xpath = "(//*[@class='btn dropdown-toggle selectpicker btn-lg'])[1]")
 	WebElement Country;
@@ -94,8 +94,8 @@ public void ConfirmMail() {
 		}
 	@FindBy(id="PhoneNumber")
 	WebElement phone;
-	public void Phone() {
-		phone.sendKeys("987654321");
+	public void Phone(String a) {
+		phone.sendKeys(a);
 	}
 	@FindBy(xpath = "(//*[@class='filter-option pull-left'])[2]")
 	WebElement Country1;
@@ -115,13 +115,13 @@ public void ConfirmMail() {
 	}*/
 	@FindBy(id="ZipCode")
 	WebElement code;
-	public void zipcode() {
-		code.sendKeys("560085");
+	public void zipcode(String a) {
+		code.sendKeys(a);
 	}
 	@FindBy(id="CardNumber")
 	WebElement card;
-	public void Credit() {
-		card.sendKeys("5555555555554444");
+	public void Credit(String a) {
+		card.sendKeys(a);
 	}
 
 	@FindBy(xpath = "(//*[@class='filter-option pull-left'])[4]")
@@ -161,8 +161,8 @@ public void ConfirmMail() {
 	}
 @FindBy(id="CVV")
 WebElement cvv;
-public void CVV() {
-	cvv.sendKeys("121");
+public void CVV(String a) {
+	cvv.sendKeys(a);
 }
 @FindBy(id="checkbox1")
 WebElement box;
