@@ -35,6 +35,7 @@ public class Base {
 	public static ExtentTest logger6;
 	public static ExtentTest logger7;
 	public static ExtentTest logger8;
+	public static ExtentTest logger9;
 	ReadConfig r;
 	String FirstName;
 	String LastNaame;
@@ -44,6 +45,18 @@ public class Base {
 	String CreditCard;
 	String CVV;
 	String Zipcode;
+	String Password;
+	String Las_error;
+	String Fast_error;
+	String Email_error;
+	String Emailconfirm_error;
+	String Reservation_error;
+	String phone_error;
+	String Zipcode_error;
+	String Cread_error;
+	String Holdname_error;
+	String cvv_error;
+	
 	
 	@BeforeTest
 	public void report()
@@ -68,7 +81,7 @@ public class Base {
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.traveluro.com/");
+		driver.get("https://traveluro.com/");
 		r=new ReadConfig();
 		FirstName=r.First_name();
 		LastNaame=r.Last_name();
@@ -78,6 +91,16 @@ public class Base {
 		Zipcode=r.Zipcode();
 		CreditCard=r.Credit_Card();
 		CVV=r.CVV();
+		Password=r.password();
+		Fast_error=r.firstnameerror();
+		Las_error=r.Lastnameerror();
+		Email_error=r.Emailerror();
+		Emailconfirm_error=r.Emailconfirmerror();
+		phone_error=r.Phoneerror();
+		Zipcode_error=r.Zipcodeerror();
+		Cread_error=r.Crederror();
+		Holdname_error=r.Holderror();
+		cvv_error=r.CVVerror();
 }
 
 	public static void getResult(ITestResult result){

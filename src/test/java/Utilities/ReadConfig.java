@@ -63,6 +63,55 @@ public String CVV() {
 	return s;
 }
 
+public String password() {
+	String s=p.getProperty("Pw");
+	return s;
+}
+public String Lastnameerror() {
+	String s=p.getProperty("L_error");
+	return s;
+}
+public String firstnameerror() {
+	String s=p.getProperty("F_error");
+	return s;
+}
+public String Emailerror() {
+	String s=p.getProperty("E_error");
+	return s;
+}
+public String Emailconfirmerror() {
+	String s=p.getProperty("EC_error");
+	return s;
+}
+public String ReservationError() {
+	String s=p.getProperty("res_error");
+	return s;
+}
+public String Phoneerror() {
+	String s=p.getProperty("p_error");
+	return s;
+}
+public String Zipcodeerror() {
+	String s=p.getProperty("Z_error");
+	return s;
+}
+public String Crederror() {
+	String s=p.getProperty("cred_error");
+	return s;
+}
+public String Holderror() {
+	String s=p.getProperty("Hold_error");
+	return s;
+}
+public String CVVerror() {
+	String s=p.getProperty("cvv_error");
+	return s;
+}
+
+
+
+
+
 
 
 }

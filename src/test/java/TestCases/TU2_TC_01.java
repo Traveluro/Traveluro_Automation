@@ -19,16 +19,16 @@ public class TU2_TC_01 extends Base{
 		p.sign();
 		logger6.log(Status.PASS, "Sign up to traveluro  page should is displayed");
 		Thread.sleep(1000);
-		p.FName("Arjun gowda");
+		p.FName(FirstName);
 		logger6.log(Status.PASS, "First and last name is Entered");
 		Thread.sleep(1000);
-		p.Email("Arjungowda11@gmail.com");
+		p.Email(Email);
 		logger6.log(Status.PASS, "Email is Entered");
 		Thread.sleep(1000);
-		p.Password("Arjun@123");
+		p.Password(Password);
 		logger6.log(Status.PASS, "Password is Entered");
 		Thread.sleep(1000);
-		p.passConform("Arjun@123");
+		p.passConform(Password);
 		logger6.log(Status.PASS,"Confirm Password is Entered");
 		Thread.sleep(1000);
 		p.Terms();
@@ -37,6 +37,7 @@ public class TU2_TC_01 extends Base{
 		p.Privecy();
 		logger6.log(Status.PASS, "Privacy and Policy Check box is selected");
 		Thread.sleep(1000);
-		
+		p.Create_account();
+		logger6.log(Status.PASS, "Privacy and Policy Check box is selected");
 	}
 }

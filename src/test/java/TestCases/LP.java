@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 
 import POM.POM_TU8_TC_05;
-import POM.POM_TU9_TC_01;
+import POM.POM_TU10_TC_02;
 @Listeners(Listener.class)
 public class LP extends Base{
 @Test
@@ -26,7 +26,7 @@ public void TestLP() throws InterruptedException
 	p.GO();
 	logger8.log(Status.PASS, "Click on go button and list of hotels page is displyed");
 	Thread.sleep(1000);
-	POM_TU9_TC_01 p1=new POM_TU9_TC_01(driver);
+	POM_TU10_TC_02 p1=new POM_TU10_TC_02(driver);
 	p1.View();
 	logger8.log(Status.PASS, "Select the proper hotel and click on view button and shows the details of f hotel page is displyed");
 	Thread.sleep(1000);

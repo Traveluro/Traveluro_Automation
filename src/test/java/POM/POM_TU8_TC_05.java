@@ -21,7 +21,7 @@ WebElement dept;
 List<WebElement> list;
 public void Bookings() {
 	dept.click();
-	dept.sendKeys("calif");
+	dept.sendKeys("califor");
 	
 	for(int i=0; i<list.size();i++)
 	{
