@@ -1,4 +1,4 @@
-package TestCases;
+package Booking_Flow;
 
 import java.io.File;
 import java.io.IOException;

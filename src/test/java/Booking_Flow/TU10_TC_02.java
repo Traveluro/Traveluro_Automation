@@ -1,15 +1,17 @@
-package TestCases;
+package Booking_Flow;
 
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
-import POM.POM_TU3_TC_01;
+
 import POM.POM_TU8_TC_05;
+
+import TestCases.Listener;
 import POM.POM_TU10_TC_02;
 @Listeners(Listener.class)
-public class TU10_TC_02 extends Base {
+public class TU10_TC_02 extends Booking_Flow.Base {
 @Test
 public void TestSelectHotel() throws InterruptedException
 {
