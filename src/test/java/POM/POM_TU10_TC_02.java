@@ -123,7 +123,11 @@ public void ConfirmMail(String a) {
 	public void Credit(String a) {
 		card.sendKeys(a);
 	}
-
+	@FindBy (xpath = "")
+	WebElement holder;
+	public void HolderName(String a) {
+		holder.sendKeys(a);
+	}
 	@FindBy(xpath = "(//*[@class='filter-option pull-left'])[4]")
 	WebElement month;
 	@FindBy(xpath ="//span")

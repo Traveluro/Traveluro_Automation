@@ -36,6 +36,8 @@ import Utilities.ReadConfig;
 	public static ExtentTest logger7;
 	public static ExtentTest logger8;
 	public static ExtentTest logger9;
+	public static ExtentTest logger10;
+	public static ExtentTest logger11;
 	ReadConfig r;
 	String FirstName;
 	String LastNaame;
