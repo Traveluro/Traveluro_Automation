@@ -61,9 +61,6 @@ public void TestVerifyErrors() throws InterruptedException
 	p3.VerifyCredCardError(Cread_error);
 	logger9.log(Status.PASS, "Verified the credit card error");
 	Thread.sleep(1000);
-	p3.VerifyHolderNameError(Holdname_error);
-	logger9.log(Status.PASS, "Verified Card Holder name error");
-	Thread.sleep(1000);
 	p3.VerifyCVVError(cvv_error);
 	logger9.log(Status.PASS, "Verified the CVV error");
 	Thread.sleep(1000);

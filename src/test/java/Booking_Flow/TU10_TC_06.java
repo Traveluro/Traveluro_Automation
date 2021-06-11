@@ -47,22 +47,19 @@ public void TestVerifyErrors() throws InterruptedException
 	Thread.sleep(1000);
 	POM_Booking_errors p3=new POM_Booking_errors(driver);
 	p3.VerifyEmailconfirmError(Emailconfirm_error);
-	logger5.log(Status.PASS, "Verified the confirm email error");
+	logger6.log(Status.PASS, "Verified the confirm email error");
 	Thread.sleep(1000);
 	p3.VerifyPhoneError(phone_error);
-	logger5.log(Status.PASS, "Verified the Phone error");
+	logger6.log(Status.PASS, "Verified the Phone error");
 	Thread.sleep(1000);
 	p3.VerifyZipcodeError(Zipcode_error);
-	logger5.log(Status.PASS, "Verified the zipcode error");
+	logger6.log(Status.PASS, "Verified the zipcode error");
 	Thread.sleep(1000);
 	p3.VerifyCredCardError(Cread_error);
-	logger5.log(Status.PASS, "Verified the credit card error");
-	Thread.sleep(1000);
-	p3.VerifyHolderNameError(Holdname_error);
-	logger5.log(Status.PASS, "Verified Card Holder name error");
+	logger6.log(Status.PASS, "Verified the credit card error");
 	Thread.sleep(1000);
 	p3.VerifyCVVError(cvv_error);
-	logger5.log(Status.PASS, "Verified the CVV error");
+	logger6.log(Status.PASS, "Verified the CVV error");
 	Thread.sleep(1000);
 }
 }

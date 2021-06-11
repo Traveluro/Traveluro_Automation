@@ -45,9 +45,6 @@ public void TestvrifyErrors() throws InterruptedException
 	p1.ConfirmMail(ConfirmEmail);
 	logger8.log(Status.PASS, "Confirm Email address is entered");
 	Thread.sleep(1000);
-	p1.CountryFlag();
-	logger8.log(Status.PASS, "Country code is selected");
-	Thread.sleep(1000);
 	p1.Phone(Phone);
 	logger8.log(Status.PASS, "Phone number is entered");
 	Thread.sleep(1000);
@@ -60,9 +57,6 @@ public void TestvrifyErrors() throws InterruptedException
 	Thread.sleep(1000);
 	p3.VerifyCredCardError(Cread_error);
 	logger8.log(Status.PASS, "Verified the credit card error");
-	Thread.sleep(1000);
-	p3.VerifyHolderNameError(Holdname_error);
-	logger8.log(Status.PASS, "Verified Card Holder name error");
 	Thread.sleep(1000);
 	p3.VerifyCVVError(cvv_error);
 	logger8.log(Status.PASS, "Verified the CVV error");

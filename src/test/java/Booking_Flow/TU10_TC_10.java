@@ -45,9 +45,6 @@ public void TestVerifyErrors() throws InterruptedException
 	p1.ConfirmMail(ConfirmEmail);
 	logger10.log(Status.PASS, "Confirm Email address is entered");
 	Thread.sleep(1000);
-	p1.CountryFlag();
-	logger10.log(Status.PASS, "Country code is selected");
-	Thread.sleep(1000);
 	p1.Phone(Phone);
 	logger10.log(Status.PASS, "Phone number is entered");
 	Thread.sleep(1000);
@@ -61,9 +58,6 @@ public void TestVerifyErrors() throws InterruptedException
 	logger10.log(Status.PASS, "Book room button is enterd");
 	Thread.sleep(1000);
 	POM_Booking_errors p3=new POM_Booking_errors(driver);
-	p3.VerifyHolderNameError(Holdname_error);
-	logger10.log(Status.PASS, "Verified Card Holder name error");
-	Thread.sleep(1000);
 	p3.VerifyCVVError(cvv_error);
 	logger10.log(Status.PASS, "Verified the CVV error");
 	Thread.sleep(1000);

@@ -132,7 +132,7 @@ import Utilities.ReadConfig;
 	public void peerdown()
 	{
 		event.flush();
-		//driver.quit();
+		driver.quit();
 	}
 public static void screenshot() {
 		
