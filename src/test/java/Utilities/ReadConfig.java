@@ -107,6 +107,23 @@ public String CVVerror() {
 	String s=p.getProperty("cvv_error");
 	return s;
 }
+public String SignupEmailerror() {
+	String s=p.getProperty("Em_error");
+	return s;
+}
+public String Signuppwerror() {
+	String s=p.getProperty("Pw_error");
+	return s;
+}
+public String SignupTermserror() {
+	String s=p.getProperty("T_error");
+	return s;
+}
+public String SignupPrivacyerror() {
+	String s=p.getProperty("Privacy_error");
+	return s;
+}
+
 
 
 
