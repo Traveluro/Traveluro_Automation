@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-17T14:45:53 IST" name="Default suite" finished-at="2021-06-17T14:46:16 IST" duration-ms="23375">
+  <suite started-at="2021-06-28T18:35:06 IST" name="Default suite" finished-at="2021-06-28T18:35:30 IST" duration-ms="23448">
     <groups>
     </groups>
-    <test started-at="2021-06-17T14:45:53 IST" name="Default test" finished-at="2021-06-17T14:46:16 IST" duration-ms="23375">
-      <class name="Signup.TU02_TC_08">
-        <test-method is-config="true" signature="report()[pri:0, instance:Signup.TU02_TC_08@778d1062]" started-at="2021-06-17T14:45:53 IST" name="report" finished-at="2021-06-17T14:45:53 IST" duration-ms="273" status="PASS">
+    <test started-at="2021-06-28T18:35:06 IST" name="Default test" finished-at="2021-06-28T18:35:30 IST" duration-ms="23448">
+      <class name="Login.TU03_TC_01">
+        <test-method is-config="true" signature="report()[pri:0, instance:Login.TU03_TC_01@778d1062]" started-at="2021-06-28T18:35:06 IST" name="report" finished-at="2021-06-28T18:35:07 IST" duration-ms="288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method is-config="true" signature="pre()[pri:0, instance:Signup.TU02_TC_08@778d1062]" started-at="2021-06-17T14:45:53 IST" name="pre" finished-at="2021-06-17T14:46:04 IST" duration-ms="10853" status="PASS">
+        <test-method is-config="true" signature="pre()[pri:0, instance:Login.TU03_TC_01@778d1062]" started-at="2021-06-28T18:35:07 IST" name="pre" finished-at="2021-06-28T18:35:24 IST" duration-ms="17421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pre -->
-        <test-method signature="TestVerifyErrors()[pri:0, instance:Signup.TU02_TC_08@778d1062]" started-at="2021-06-17T14:46:04 IST" name="TestVerifyErrors" finished-at="2021-06-17T14:46:15 IST" duration-ms="11446" status="PASS">
+        <test-method signature="TestVerifyLogin()[pri:0, instance:Login.TU03_TC_01@778d1062]" started-at="2021-06-28T18:35:24 IST" name="TestVerifyLogin" finished-at="2021-06-28T18:35:29 IST" duration-ms="5128" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestVerifyErrors -->
-        <test-method is-config="true" signature="peerdown()[pri:0, instance:Signup.TU02_TC_08@778d1062]" started-at="2021-06-17T14:46:15 IST" name="peerdown" finished-at="2021-06-17T14:46:16 IST" duration-ms="740" status="PASS">
+        </test-method> <!-- TestVerifyLogin -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Login.TU03_TC_01@778d1062]" started-at="2021-06-28T18:35:29 IST" name="peerdown" finished-at="2021-06-28T18:35:30 IST" duration-ms="560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- peerdown -->
-      </class> <!-- Signup.TU02_TC_08 -->
+      </class> <!-- Login.TU03_TC_01 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
