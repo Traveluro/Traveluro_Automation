@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
     	  <class name="Signup.TU02_TC_01"/>
-      <class name="Booking_Flow.TU10_TC_01"/>
+      <class name="Login.TU03_TC_01"/>
     
     </classes>
   </test> <!-- Test -->

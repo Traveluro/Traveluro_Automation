@@ -63,7 +63,7 @@ import Utilities.ReadConfig;
 	@BeforeTest
 	public void report()
 	{
-		rep=new ExtentHtmlReporter("./test-output/Report.html");
+		rep=new ExtentHtmlReporter("./test-output/Booking.html");
 		event=new ExtentReports();
 		event.attachReporter(rep);
 		event.setSystemInfo("hostname", "Lenovo");
