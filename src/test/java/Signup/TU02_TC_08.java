@@ -11,7 +11,7 @@ public class TU02_TC_08 extends Base {
 @Test
 public void TestVerifyErrors() throws InterruptedException
 {
-	logger8=event.createTest("Verify the system behaviour when all the fields are left blank and clicked on \"Create account\" button to create a Traveluro account.");
+	logger8=event.createTest("Verify the system behaviour when only the valid first name, last name, email id, password, confirm password and 'terms of service' checkbox is checked and clicked on Create account button.");
 	POM_TU2_TC_01 p=new POM_TU2_TC_01(driver);
 	p.Login();
 	logger8.log(Status.PASS, "click on login link");
