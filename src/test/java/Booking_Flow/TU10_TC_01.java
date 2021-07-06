@@ -11,7 +11,7 @@ import POM.POM_TU8_TC_05;
 
 public class TU10_TC_01 extends Base {
 @Test
-public void VerifyErrors() throws InterruptedException
+public void VerifyErrorsWitoutInputs() throws InterruptedException
 {
 	logger1 =event.createTest("Verify the system behaviour when clicked on 'Book Now' button from the selected hotel page.");
 	POM_TU8_TC_05 p=new POM_TU8_TC_05(driver);

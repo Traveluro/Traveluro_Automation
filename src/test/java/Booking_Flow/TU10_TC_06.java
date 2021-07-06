@@ -10,7 +10,7 @@ import POM.POM_TU8_TC_05;
 
 public class TU10_TC_06 extends Base {
 @Test
-public void TestVerifyErrors() throws InterruptedException
+public void TestVerifyErrorsWithConfirmEmail() throws InterruptedException
 {
 	logger6 =event.createTest("Verify the system behaviour when only the 'First name', 'Last Name', valid 'Email id' and valid 'Confirm Email id' is entered under 'Guest Details' section and clicked on 'Book this room' button.");
 	POM_TU8_TC_05 p=new POM_TU8_TC_05(driver);
@@ -42,13 +42,13 @@ public void TestVerifyErrors() throws InterruptedException
 	p1.Email(Email);
 	logger6.log(Status.PASS, "Email address is entered");
 	Thread.sleep(1000);
+	p1.ConfirmMail(ConfirmEmail);
+	logger6.log(Status.PASS, "Confirm Email address is entered");
+	Thread.sleep(1000);
 	p1.BookRoom();
 	logger6.log(Status.PASS, "Book room button is enterd");
 	Thread.sleep(1000);
 	POM_Booking_errors p3=new POM_Booking_errors(driver);
-	p3.VerifyEmailconfirmError(Emailconfirm_error);
-	logger6.log(Status.PASS, "Verified the confirm email error");
-	Thread.sleep(1000);
 	p3.VerifyPhoneError(phone_error);
 	logger6.log(Status.PASS, "Verified the Phone error");
 	Thread.sleep(1000);

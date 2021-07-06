@@ -10,7 +10,7 @@ import POM.POM_TU8_TC_05;
 
 public class TU10_TC_03 extends Base {
 @Test
-public void TestVerifyErrors() throws InterruptedException
+public void TestVerifyErrorsWithfirstname() throws InterruptedException
 {
 	logger3 =event.createTest(" Verify the system behaviour when only the 'First name' is entered under 'Guest Details' section and clicked on 'Book this room' button.");
 	POM_TU8_TC_05 p=new POM_TU8_TC_05(driver);

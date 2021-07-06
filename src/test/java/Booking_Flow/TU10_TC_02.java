@@ -13,7 +13,7 @@ import POM.POM_TU10_TC_02;
 @Listeners(Listener.class)
 public class TU10_TC_02 extends Booking_Flow.Base {
 @Test
-public void TestSelectHotel() throws InterruptedException
+public void VerifyWithAllInputs() throws InterruptedException
 {
 
 	logger2 =event.createTest("Verify the system behaviour when valid values are provided to all the required fields and clicked on 'Book this room' button.");
