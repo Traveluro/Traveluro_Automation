@@ -12,26 +12,26 @@ public class TU10_TC_10 extends Base{
 @Test
 public void TestVerifyErrors() throws InterruptedException
 {
-	logger10 =event.createTest("Error verify in booking page with first and last name, Email, confirmEmail, Prone, zipcode and credit card entered");
+	logger10 =event.createTest("Verify the system behaviour when only the valid 'Card Number' is entered under 'Payment Details' section and clicked on 'Book this room' button.");
 	POM_TU8_TC_05 p=new POM_TU8_TC_05(driver);
-	p.Bookings();
-	logger10.log(Status.PASS, "Destination name is selected");
+	p.Destination();
+	logger10.log(Status.PASS, "Destination place is selected");
 	Thread.sleep(1000);
 	p.Date();
-	logger10.log(Status.PASS, "Booking Date is seletced");
+	logger10.log(Status.PASS, "Expected date selected");
 	Thread.sleep(1000);
 	p.Adult();
-	logger10.log(Status.PASS, "room, adult numbers is added");
+	logger10.log(Status.PASS, "Room and Adults is selected");
 	Thread.sleep(1000);
 	p.GO();
-	logger10.log(Status.PASS, "Go button is entered");
+	logger10.log(Status.PASS, "Click on go button");
 	Thread.sleep(1000);
 	POM_TU10_TC_02 p1=new POM_TU10_TC_02(driver);
 	p1.View();
-	logger10.log(Status.PASS, "requred hotel is selected and view button is entered");
+	logger10.log(Status.PASS, "Click on view button");
 	Thread.sleep(1000);
 	p1.BookNow();
-	logger10.log(Status.PASS, "Book Now button is entered");
+	logger10.log(Status.PASS, "Click on Book now button");
 	Thread.sleep(1000);
 	p1.FirstName(FirstName);
 	logger10.log(Status.PASS, "First name is entered");

@@ -13,7 +13,7 @@ public class HAC extends Base {
 public void TestHAC() throws InterruptedException {
 	logger7 =event.createTest("Hotel availability");
 	POM_TU8_TC_05 p=new POM_TU8_TC_05(driver);
-	p.Bookings();
+	p.Destination();
 	logger7.log(Status.PASS, "Proper location name is selected from destination drop down list");
 	Thread.sleep(1000);
 	p.Date();

@@ -13,7 +13,7 @@ public void TestDestination() throws InterruptedException
 {
 	logger4=event.createTest("Search Page");
 	POM_TU8_TC_05 p=new POM_TU8_TC_05(driver);
-	p.Bookings();
+	p.Destination();
 	logger4.log(Status.PASS, "Selected the perticuler destination");
 	Thread.sleep(1000);
 	p.Date();

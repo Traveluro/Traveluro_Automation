@@ -19,7 +19,7 @@ PageFactory.initElements(driver, this);
 WebElement dept;
 @FindBy(xpath = "//div")
 List<WebElement> list;
-public void Bookings() {
+public void Destination() {
 	dept.click();
 	dept.sendKeys("califor");
 	

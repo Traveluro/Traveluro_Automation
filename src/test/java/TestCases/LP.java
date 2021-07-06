@@ -14,7 +14,7 @@ public void TestLP() throws InterruptedException
 {
 	logger8 =event.createTest("Landing Page");
 	POM_TU8_TC_05 p=new POM_TU8_TC_05(driver);
-	p.Bookings();
+	p.Destination();
 	logger8.log(Status.PASS, "Proper location name is selected from destination drop down list");
 	Thread.sleep(1000);
 	p.Date();

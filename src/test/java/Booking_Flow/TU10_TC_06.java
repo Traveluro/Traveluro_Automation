@@ -12,26 +12,26 @@ public class TU10_TC_06 extends Base {
 @Test
 public void TestVerifyErrors() throws InterruptedException
 {
-	logger6 =event.createTest("Error verify in booking page with first and last name and Email");
+	logger6 =event.createTest("Verify the system behaviour when only the 'First name', 'Last Name', valid 'Email id' and valid 'Confirm Email id' is entered under 'Guest Details' section and clicked on 'Book this room' button.");
 	POM_TU8_TC_05 p=new POM_TU8_TC_05(driver);
-	p.Bookings();
-	logger6.log(Status.PASS, "Proper location name is selected from destination drop down list");
+	p.Destination();
+	logger6.log(Status.PASS, "Destination place is selected");
 	Thread.sleep(1000);
 	p.Date();
-	logger6.log(Status.PASS, "Proper date is selected by date text box");
+	logger6.log(Status.PASS, "Expected date selected");
 	Thread.sleep(1000);
 	p.Adult();
-	logger6.log(Status.PASS, "Proper room and Adult is selected by Adult text box");
+	logger6.log(Status.PASS, "Room and Adults is selected");
 	Thread.sleep(1000);
 	p.GO();
-	logger6.log(Status.PASS, "Click on go button and list of hotels page is displyed");
+	logger6.log(Status.PASS, "Click on go button");
 	Thread.sleep(1000);
 	POM_TU10_TC_02 p1=new POM_TU10_TC_02(driver);
 	p1.View();
-	logger6.log(Status.PASS, "Select the proper hotel and click on view button and shows the details of f hotel page is displyed");
+	logger6.log(Status.PASS, "Click on view button");
 	Thread.sleep(1000);
 	p1.BookNow();
-	logger6.log(Status.PASS, "Click on Book now butto, Payment page is displyed");
+	logger6.log(Status.PASS, "Click on Book now button");
 	Thread.sleep(1000);
 	p1.FirstName(FirstName);
 	logger6.log(Status.PASS, "First name is entered");
