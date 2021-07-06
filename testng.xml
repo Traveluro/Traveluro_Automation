@@ -3,7 +3,17 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Login.TU03_TC_01"/>
+      <class name="Booking_Flow.TU10_TC_01"/>
+      <class name="Booking_Flow.TU10_TC_02"/>
+      <class name="Booking_Flow.TU10_TC_03"/>
+      <class name="Booking_Flow.TU10_TC_04"/>
+      <class name="Booking_Flow.TU10_TC_05"/>
+      <class name="Booking_Flow.TU10_TC_06"/>
+      <class name="Booking_Flow.TU10_TC_07"/>
+      <class name="Booking_Flow.TU10_TC_08"/>
+      <class name="Booking_Flow.TU10_TC_09"/>
+      <class name="Booking_Flow.TU10_TC_10"/>
+      <class name="Booking_Flow.TU10_TC_11"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
