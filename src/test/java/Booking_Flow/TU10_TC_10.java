@@ -10,7 +10,7 @@ import POM.POM_TU8_TC_05;
 
 public class TU10_TC_10 extends Base{
 @Test
-public void TestVerifyErrors() throws InterruptedException
+public void TestVerifyErrorWithCreditCard() throws InterruptedException
 {
 	logger10 =event.createTest("Verify the system behaviour when only the valid 'Card Number' is entered under 'Payment Details' section and clicked on 'Book this room' button.");
 	POM_TU8_TC_05 p=new POM_TU8_TC_05(driver);

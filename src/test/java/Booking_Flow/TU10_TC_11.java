@@ -10,7 +10,7 @@ import POM.POM_TU8_TC_05;
 
 public class TU10_TC_11 extends Base{
 @Test
-public void TestVerifyErrors() throws InterruptedException
+public void TestVerifyErrorWithHolderName() throws InterruptedException
 {
 	logger11 =event.createTest("Verify the sytem behaviour when only the valid 'Card Number' and 'Card holder name' is entered under 'Payment Details' section and clicked on 'Book this room' button.");
 	
