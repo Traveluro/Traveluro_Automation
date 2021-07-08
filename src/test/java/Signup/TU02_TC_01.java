@@ -14,7 +14,7 @@ public class TU02_TC_01 extends Base{
 	@Test
 	public void TestSignUp() throws InterruptedException
 	{
-		logger1=event.createTest("Verify the system behaviour when valid first name, last name, email id, password,  confirm password is entered along with terms of service and privacy policy checkboxes are checked and clicked on \"Create account\" button");
+		logger1=event.createTest("Verify the system behaviour when valid first name, last name, email id, password,  confirm password is entered along with terms of service and privacy policy checkboxes are checked and clicked on 'Create account' button");
 		POM_TU2_TC_01 p=new POM_TU2_TC_01(driver);
 		p.Login();
 		logger1.log(Status.PASS, "Login to traveluro page is displayed");
@@ -42,5 +42,8 @@ public class TU02_TC_01 extends Base{
 		Thread.sleep(1000);
 		p.Create_account();
 		logger1.log(Status.PASS, "Privacy and Policy Check box is selected");
+		Thread.sleep(1000);
+		p.SignupExistError(SignupExistError);
+		logger1.log(Status.PASS, "Exist account error message is displayed");
 	}
 }

@@ -123,7 +123,14 @@ public String SignupPrivacyerror() {
 	String s=p.getProperty("Privacy_error");
 	return s;
 }
-
+public String URL() {
+	String s=p.getProperty("URL");
+	return s;
+}
+public String SignupExistError() {
+	String s=p.getProperty("signupError");
+	return s;
+}
 
 
 

@@ -1,4 +1,4 @@
-package Signup;
+package Portal;
 
 import java.io.File;
 import java.io.IOException;
@@ -36,21 +36,34 @@ import Utilities.ReadConfig;
 	public static ExtentTest logger7;
 	public static ExtentTest logger8;
 	public static ExtentTest logger9;
+	public static ExtentTest logger10;
+	public static ExtentTest logger11;
 	ReadConfig r;
 	String FirstName;
 	String LastNaame;
 	String Email;
+	String ConfirmEmail;
+	String Phone;
+	String CreditCard;
+	String CVV;
+	String Zipcode;
 	String Password;
-	String SignupEmailError;
-	String SignupPasswordError;
-	String SignupTermsError;
-	String SignupPrivacyError;
-	String SignupExistError;
+	String Las_error;
+	String Fast_error;
+	String Email_error;
+	String Emailconfirm_error;
+	String Reservation_error;
+	String phone_error;
+	String Zipcode_error;
+	String Cread_error;
+	String Holdname_error;
+	String cvv_error;
+	String URL;
 	
 	@BeforeTest
 	public void report()
 	{
-		rep=new ExtentHtmlReporter("./test-output/Signup.html");
+		rep=new ExtentHtmlReporter("./test-output/Booking.html");
 		event=new ExtentReports();
 		event.attachReporter(rep);
 		event.setSystemInfo("hostname", "Lenovo");
@@ -59,8 +72,8 @@ import Utilities.ReadConfig;
 		event.setSystemInfo("Tester", "Abhilash Gowda");
 		
 		 rep.config().setAutoCreateRelativePathMedia(true);
-		 rep.config().setDocumentTitle("TravelUro SignUP Testing Report");
-		 rep.config().setReportName("SignUp Modules Report");
+		 rep.config().setDocumentTitle("TravelUro AutomationTesting Report");
+		 rep.config().setReportName("Sanity Modules Report");
 		 rep.config().setTheme(Theme.DARK);
 	
 	}
@@ -75,12 +88,22 @@ import Utilities.ReadConfig;
 		FirstName=r.First_name();
 		LastNaame=r.Last_name();
 		Email=r.Email();
+		ConfirmEmail=r.Confirmation_Email();
+		Phone=r.Phone();
+		Zipcode=r.Zipcode();
+		CreditCard=r.Credit_Card();
+		CVV=r.CVV();
 		Password=r.password();
-		SignupEmailError=r.SignupEmailerror();
-		SignupPasswordError=r.Signuppwerror();
-		SignupTermsError=r.SignupTermserror();
-		SignupPrivacyError=r.SignupPrivacyerror();
-		SignupExistError=r.SignupExistError();
+		Fast_error=r.firstnameerror();
+		Las_error=r.Lastnameerror();
+		Email_error=r.Emailerror();
+		Emailconfirm_error=r.Emailconfirmerror();
+		phone_error=r.Phoneerror();
+		Zipcode_error=r.Zipcodeerror();
+		Cread_error=r.Crederror();
+		Holdname_error=r.Holderror();
+		cvv_error=r.CVVerror();
+		URL=r.URL();
 }
 
 	public static void getResult(ITestResult result){
@@ -97,15 +120,6 @@ import Utilities.ReadConfig;
 			logger4.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());
 			logger5.log(Status.FAIL, "Test Case Failed is "+result.getName());
 			logger5.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());
-			logger6.log(Status.FAIL, "Test Case Failed is "+result.getName());
-			logger6.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());
-			logger7.log(Status.FAIL, "Test Case Failed is "+result.getName());
-			logger7.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());
-			logger8.log(Status.FAIL, "Test Case Failed is "+result.getName());
-			logger8.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());
-			logger9.log(Status.FAIL, "Test Case Failed is "+result.getName());
-			logger9.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());
-			
 		}else if(result.getStatus() == ITestResult.SKIP){
 			logger.log(Status.SKIP, "Test Case Skipped is "+result.getName());
 			logger1.log(Status.SKIP, "Test Case Skipped is "+result.getName());
@@ -113,10 +127,6 @@ import Utilities.ReadConfig;
 			logger3.log(Status.SKIP, "Test Case Skipped is "+result.getName());
 			logger4.log(Status.SKIP, "Test Case Skipped is "+result.getName());
 			logger5.log(Status.SKIP, "Test Case Skipped is "+result.getName());
-			logger6.log(Status.SKIP, "Test Case Skipped is "+result.getName());
-			logger7.log(Status.SKIP, "Test Case Skipped is "+result.getName());
-			logger8.log(Status.SKIP, "Test Case Skipped is "+result.getName());
-			logger9.log(Status.SKIP, "Test Case Skipped is "+result.getName());
 		}
 	}
 	@AfterMethod

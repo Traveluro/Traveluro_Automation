@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class POM_TU2_TC_01 {
 	WebDriver driver;
@@ -61,5 +62,11 @@ public class POM_TU2_TC_01 {
 	public void Create_account() {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()", submit);
+	}
+	@FindBy(xpath = "//*[text()='User already exist']")
+	WebElement existError;
+	public void SignupExistError(String E) {
+		String A=existError.getText();
+		Assert.assertEquals(A, E);
 	}
 }
