@@ -2,6 +2,7 @@ Login\Base.class
 Booking_Flow\TU10_TC_09.class
 POM\POM_TU3_TC_01.class
 TestCases\TU4_TC_01.class
+Portal\Base.class
 Signup\TU02_TC_07.class
 Utilities\ReadConfig.class
 Booking_Flow\TU10_TC_02.class
@@ -15,7 +16,9 @@ TestCases\LP.class
 Booking_Flow\TU10_TC_06.class
 Signup\TU02_TC_09.class
 POM\POM_Booking_errors.class
+Portal\TU01_TC_01.class
 POM\POM_HAC.class
+POM\POM_Portal.class
 Signup\Base.class
 TestCases\Listener.class
 Booking_Flow\TU10_TC_11.class
