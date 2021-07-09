@@ -1,4 +1,4 @@
-package Booking_Flow;
+package Sanity;
 
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
