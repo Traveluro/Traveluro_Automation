@@ -14,6 +14,7 @@ public class TU02_TC_01 extends Base{
 	@Test
 	public void TestSignUp() throws InterruptedException
 	{
+		try {
 		logger1=event.createTest("Verify the system behaviour when valid first name, last name, email id, password,  confirm password is entered along with terms of service and privacy policy checkboxes are checked and clicked on 'Create account' button");
 		POM_TU2_TC_01 p=new POM_TU2_TC_01(driver);
 		p.Login();
@@ -45,5 +46,7 @@ public class TU02_TC_01 extends Base{
 		Thread.sleep(1000);
 		p.SignupExistError(SignupExistError);
 		logger1.log(Status.PASS, "Exist account error message is displayed");
-	}
+	}catch (Exception e) {
+		System.out.println(e.getMessage());
+	}}
 }

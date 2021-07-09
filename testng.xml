@@ -3,7 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Login.TU03_TC_01"/>
+      <class name="Sanity.TU02_TC_01"/>
+      <class name="Sanity.TU03_TC_01"/>
+      <class name="Sanity.TU10_TC_02"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
