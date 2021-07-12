@@ -36,6 +36,8 @@ import Utilities.ReadConfig;
 	public static ExtentTest logger7;
 	public static ExtentTest logger8;
 	public static ExtentTest logger9;
+	public static ExtentTest logger10;
+	public static ExtentTest logger11;
 	ReadConfig r;
 	String FirstName;
 	String LastNaame;
@@ -50,10 +52,11 @@ import Utilities.ReadConfig;
 	String CreditCard;
 	String CVV;
 	String Zipcode;
+	String URL;
 	@BeforeTest
 	public void report()
 	{
-		rep=new ExtentHtmlReporter("./test-output/Login.html");
+		rep=new ExtentHtmlReporter("./test-output/Sanity.html");
 		event=new ExtentReports();
 		event.attachReporter(rep);
 		event.setSystemInfo("hostname", "Lenovo");
@@ -88,6 +91,7 @@ import Utilities.ReadConfig;
 		Zipcode=r.Zipcode();
 		CreditCard=r.Credit_Card();
 		CVV=r.CVV();
+		URL=r.URL();
 }
 
 	public static void getResult(ITestResult result){
