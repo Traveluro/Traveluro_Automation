@@ -53,6 +53,9 @@ import Utilities.ReadConfig;
 	String CVV;
 	String Zipcode;
 	String URL;
+	String SearchValid;
+	String Hotelvalid;
+	String LogonValid;
 	@BeforeTest
 	public void report()
 	{
@@ -92,6 +95,9 @@ import Utilities.ReadConfig;
 		CreditCard=r.Credit_Card();
 		CVV=r.CVV();
 		URL=r.URL();
+		SearchValid=r.SearchValid();
+		Hotelvalid=r.HotelValid();
+		LogonValid=r.logonValid();
 }
 
 	public static void getResult(ITestResult result){
@@ -121,7 +127,7 @@ import Utilities.ReadConfig;
 	public void peerdown()
 	{
 		event.flush();
-		driver.quit();
+		//driver.quit();
 	}
 public static void screenshot() {
 		

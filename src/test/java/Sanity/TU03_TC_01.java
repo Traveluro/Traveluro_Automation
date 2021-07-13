@@ -27,6 +27,7 @@ public void TestVerifyLogin() throws InterruptedException {
 		p1.submit();
 		logger3.log(Status.PASS, "Click on login, Traveluro home page is displayed and also shows the Log on the user");
 		Thread.sleep(1000);
+		p1.VerifyLogOn(LogonValid);
 		}catch (Exception e) {
 		System.out.println(e.getMessage());
 		}

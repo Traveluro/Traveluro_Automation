@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class POM_TU8_TC_05 {
 WebDriver driver;
@@ -26,6 +27,7 @@ public void Destination() {
 	for(int i=0; i<list.size();i++)
 	{
 		String s=list.get(i).getText();
+		
 		
 		if(s.contains("CA, USA"))
 				{
@@ -63,6 +65,13 @@ public void Adult() {
 WebElement go;
 public void GO() {
 	go.click();
+}
+@FindBy(xpath = "//*[text()='California']")
+WebElement loc;
+public void VerifySearchedLocation(String E) {
+	String A=loc.getText();
+	Assert.assertEquals(A, E);
+	
 }
 }
 

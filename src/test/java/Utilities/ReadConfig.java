@@ -131,10 +131,19 @@ public String SignupExistError() {
 	String s=p.getProperty("signupError");
 	return s;
 }
+public String SearchValid() {
+	String s=p.getProperty("Searchvalid");
+	return s;
+}
+public String HotelValid() {
+	String s=p.getProperty("HotelValid");
+	return s;
+}
 
-
-
-
+public String logonValid() {
+	String s=p.getProperty("LoginValid");
+	return s;
+}
 
 
 

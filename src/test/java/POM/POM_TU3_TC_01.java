@@ -1,9 +1,12 @@
 package POM;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class POM_TU3_TC_01 {
@@ -28,10 +31,22 @@ public class POM_TU3_TC_01 {
 	public void submit() {
 		login.click();
 	}
-	@FindBy(xpath = "(//*[text()='Abhilash G'])[1]")
-	WebElement user;
-	public void User(String expected) {
-		String Actual=user.getText();
-		Assert.assertEquals(Actual, expected);
+
+	@FindBy(id = "sm-15236008200698604-3")
+	WebElement logon;
+	@FindBy(xpath = "//*[text()=' Welcome, ']")
+	WebElement wel;
+	public void VerifyLogOn(String E) {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click()", logon);
+		String A=wel.getText();
+		System.out.println(A);
+		if(A.contains(E))
+		{
+			System.out.println(E);
+		}
+		
+		
+	
 	}
 }
