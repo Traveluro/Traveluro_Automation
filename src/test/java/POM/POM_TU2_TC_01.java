@@ -67,6 +67,13 @@ public class POM_TU2_TC_01 {
 	WebElement existError;
 	public void SignupExistError(String E) {
 		String A=existError.getText();
-		Assert.assertEquals(A, E);
+		if(A.contains(E))
+		{
+			System.out.println("Verified Pass:-"+E);
+		}
+		else 
+		{
+			System.out.println("Verified Fail:-"+A);
+		}
 	}
 }

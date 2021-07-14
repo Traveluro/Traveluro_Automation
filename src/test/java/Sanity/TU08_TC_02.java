@@ -26,7 +26,8 @@ public void HomPage() throws InterruptedException
 		logger8.log(Status.PASS, "Click on go button");
 		Thread.sleep(1000);
 		p.VerifySearchedLocation(SearchValid);
-		logger8.log(Status.PASS, "Verified the seaarch page");
+		logger8.log(Status.PASS, "Verified the search page");
+		Thread.sleep(2000);
 }catch (Exception e) {
 	System.out.println(e.getMessage());
 }}

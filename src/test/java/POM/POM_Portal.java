@@ -15,6 +15,13 @@ public POM_Portal(WebDriver driver)
 }
 public void VerifyURL(String E) {
 	String A=driver.getCurrentUrl();
-	Assert.assertEquals(A, E);
+	if(A.contains(E))
+	{
+		System.out.println("Verified Pass:-"+E);
+	}
+	else 
+	{
+		System.out.println("Verified Fail:-"+A);
+	}
 }
 }

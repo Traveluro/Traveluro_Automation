@@ -7,6 +7,7 @@ import com.aventstack.extentreports.Status;
 import POM.POM_TU10_TC_02;
 import POM.POM_TU2_TC_01;
 import POM.POM_TU8_TC_05;
+import POM.POM_TU9_TC_01;
 
 public class TU09_TC_01 extends Base {
 @Test
@@ -30,6 +31,11 @@ try {
 	POM_TU10_TC_02 p1=new POM_TU10_TC_02(driver);
 	p1.View();
 	logger9.log(Status.PASS, "expected hotel selected");
+	Thread.sleep(1000);
+	POM_TU9_TC_01 p2=new POM_TU9_TC_01(driver);
+	p2.VerifyHotelpage(Hotelvalid);
+	logger9.log(Status.PASS, "Verified hotel page");
+	Thread.sleep(1000);
 }catch (Exception e) {
 System.out.println(e.getMessage());
 }}

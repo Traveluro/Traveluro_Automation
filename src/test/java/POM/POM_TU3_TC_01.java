@@ -43,8 +43,13 @@ public class POM_TU3_TC_01 {
 		System.out.println(A);
 		if(A.contains(E))
 		{
-			System.out.println(E);
+			System.out.println("Verified Pass:-"+E);
 		}
+		else 
+		{
+			System.out.println("Verified Fail:-"+A);
+		}
+
 		
 		
 	
