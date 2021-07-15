@@ -56,6 +56,8 @@ import Utilities.ReadConfig;
 	String SearchValid;
 	String Hotelvalid;
 	String LogonValid;
+	String Bookvalid;
+	String ConfirmationValid;
 	@BeforeTest
 	public void report()
 	{
@@ -98,6 +100,8 @@ import Utilities.ReadConfig;
 		SearchValid=r.SearchValid();
 		Hotelvalid=r.HotelValid();
 		LogonValid=r.logonValid();
+		Bookvalid=r.BookValid();
+		ConfirmationValid=r.ConfirmationValid();
 }
 
 	public static void getResult(ITestResult result){
@@ -127,7 +131,7 @@ import Utilities.ReadConfig;
 	public void peerdown()
 	{
 		event.flush();
-		driver.quit();
+		//driver.quit();
 	}
 public static void screenshot() {
 		

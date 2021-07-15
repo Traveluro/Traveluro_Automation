@@ -28,7 +28,7 @@ public class POM_TU9_TC_01 {
 			driver.switchTo().window(ChildWindowId);
 			 String currentURL = driver.getCurrentUrl();
 		       if (currentURL.contains(E)) {
-		           System.out.println("Verified Pass:-" + E);
+		           System.out.println("Verified Pass:-" + currentURL);
 		       } else {
 		           System.out.println("Veriofied Fail:-" + currentURL);
 		       }

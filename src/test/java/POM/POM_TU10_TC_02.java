@@ -34,8 +34,10 @@ public void View() {
 	WebDriverWait w=new WebDriverWait(driver, 40);
 	w.until(ExpectedConditions.elementToBeClickable(view)).click();	
 }
-@FindBy(xpath = "(//*[text()='Book Now'])[1]")
+@FindBy(xpath = "(//*[text()='Book Now'])[3]")
 WebElement book;
+@FindBy(xpath = "(//*[text()='Free Cancellation By August 21'])[1]")
+WebElement cancel;
 public void BookNow() {
 	Set<String> h = driver.getWindowHandles();
 	Iterator<String>it = h.iterator();
@@ -43,6 +45,7 @@ public void BookNow() {
 	String parent=it.next();
 	String ChildWindowId=it.next();
 	driver.switchTo().window(ChildWindowId);
+	
 	WebDriverWait w=new WebDriverWait(driver, 30);
 	w.until(ExpectedConditions.elementToBeClickable(book)).click();
 	}
@@ -181,6 +184,22 @@ public void BookRoom() {
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	js.executeScript("arguments[0].click()", bookroom);
 	
+}
+public void ValidConfirmation(String E) {
+	try {
+		String A=driver.getCurrentUrl();
+		if(A.contains(E))
+		{
+			System.out.println("Verified Pass:-"+A);
+		}
+		else 
+		{
+			System.out.println("Verified Fail:-"+A);
+		}
+		Thread.sleep(2000);
+		}catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 }
 
 	}

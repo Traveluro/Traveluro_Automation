@@ -73,7 +73,7 @@ public void VerifySearchedLocation(String E) {
 	String A=driver.getCurrentUrl();
 	if(A.contains(E))
 	{
-		System.out.println("Verified Pass:-"+E);
+		System.out.println("Verified Pass:-"+A);
 	}
 	else 
 	{

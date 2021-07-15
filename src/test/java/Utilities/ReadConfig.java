@@ -144,7 +144,14 @@ public String logonValid() {
 	String s=p.getProperty("LoginValid");
 	return s;
 }
+public String BookValid() {
+	String s=p.getProperty("BookingValid");
+	return s;
+}
 
-
+public String ConfirmationValid() {
+	String s=p.getProperty("ConfirmationValid");
+	return s;
+}
 
 }
