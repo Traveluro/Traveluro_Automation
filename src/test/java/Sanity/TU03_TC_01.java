@@ -12,7 +12,7 @@ public class TU03_TC_01 extends Base {
 public void TestVerifyLogin() throws InterruptedException {
 	{
 		try {
-		logger3 =event.createTest("Login");
+		logger3 =event.createTest("Verify the system behaviour when valid email and password is entered and clicked on Login button.");
 		POM_TU2_TC_01 p=new POM_TU2_TC_01(driver);
 		p.Login();
 		logger3.log(Status.PASS, "login link is clicked");

@@ -34,7 +34,7 @@ public void View() {
 	WebDriverWait w=new WebDriverWait(driver, 40);
 	w.until(ExpectedConditions.elementToBeClickable(view)).click();	
 }
-@FindBy(xpath = "(//*[text()='Book Now'])[3]")
+@FindBy(xpath = "(//*[text()='Book Now'])[1]")
 WebElement book;
 @FindBy(xpath = "(//*[text()='Free Cancellation By August 21'])[1]")
 WebElement cancel;

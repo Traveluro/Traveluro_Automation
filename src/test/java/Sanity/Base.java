@@ -8,17 +8,21 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.beust.jcommander.Parameter;
 
 import Utilities.ReadConfig;
 
@@ -75,13 +79,22 @@ import Utilities.ReadConfig;
 		 rep.config().setTheme(Theme.DARK);
 	
 	}
+	@Parameters("browser")
 	@BeforeMethod
-	public void pre()
+	public void pre(String browser)
 	{
+		if(browser.contains("chrome"))
+		{
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		driver=new ChromeDriver();
+		}
+		else if(browser.contains("FireFox"))
+		{
+			System.setProperty("webdriver.gecko.driver", "./driver/geckodriver.exe");
+			driver=new FirefoxDriver();
+		}
 		driver.manage().window().maximize();
-		driver.get("https://traveluro.com/");
+		driver.get("https://www.traveluroqa.com/");
 		r=new ReadConfig();
 		FirstName=r.First_name();
 		LastNaame=r.Last_name();
@@ -131,7 +144,7 @@ import Utilities.ReadConfig;
 	public void peerdown()
 	{
 		event.flush();
-		//driver.quit();
+		driver.quit();
 	}
 public static void screenshot() {
 		

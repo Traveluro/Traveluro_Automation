@@ -76,6 +76,9 @@ try {
 	p1.BookRoom();
 	logger10.log(Status.PASS, "Click on the Book Room button");
 	Thread.sleep(1000);
+	p1.ValidConfirmation(ConfirmationValid);
+	logger10.log(Status.PASS, "Verified the confirmation Page");
+	Thread.sleep(1000);
 }
 	catch (Exception e) {
 		System.out.println(e.getMessage());
