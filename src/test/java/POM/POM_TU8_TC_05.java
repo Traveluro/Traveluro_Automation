@@ -2,6 +2,7 @@ package POM;
 
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,6 +16,14 @@ public POM_TU8_TC_05(WebDriver driver)
 {
 this.driver=driver;
 PageFactory.initElements(driver, this);
+}
+
+@FindBy(id = "Currency")
+WebElement currency;
+public void Currency()
+{
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	js.executeScript("arguments[0].click()", currency);
 }
 @FindBy(id = "myInput")
 WebElement dept;

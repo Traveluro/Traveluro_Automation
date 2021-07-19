@@ -13,7 +13,10 @@ public void HomPage() throws InterruptedException
 	try {
 		logger8 =event.createTest("Verify the system behaviour of the 'Destination' field dropdown list when any value is typed/entered.");
 		POM_TU8_TC_05 p=new POM_TU8_TC_05(driver);
-		p.Destination();
+		p.Currency();
+		logger8.log(Status.PASS, "Currency value is selected");
+		Thread.sleep(1000);
+		/*p.Destination();
 		logger8.log(Status.PASS, "Destination place is selected");
 		Thread.sleep(1000);
 		p.Date();
@@ -27,7 +30,7 @@ public void HomPage() throws InterruptedException
 		Thread.sleep(1000);
 		p.VerifySearchedLocation(SearchValid);
 		logger8.log(Status.PASS, "Verified the search page");
-		Thread.sleep(2000);
+		Thread.sleep(2000);*/
 }catch (Exception e) {
 	System.out.println(e.getMessage());
 }}

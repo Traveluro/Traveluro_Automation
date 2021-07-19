@@ -94,7 +94,7 @@ import Utilities.ReadConfig;
 			driver=new FirefoxDriver();
 		}
 		driver.manage().window().maximize();
-		driver.get("https://www.traveluroqa.com/");
+		driver.get("https://traveluro.com/");
 		r=new ReadConfig();
 		FirstName=r.First_name();
 		LastNaame=r.Last_name();
@@ -144,7 +144,7 @@ import Utilities.ReadConfig;
 	public void peerdown()
 	{
 		event.flush();
-		driver.quit();
+		//driver.quit();
 	}
 public static void screenshot() {
 		
