@@ -4,38 +4,6 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Sanity.TU09_TC_01">
-        <methods>
-          <include name="pre"/>
-          <include name="SearchPage"/>
-          <include name="report"/>
-          <include name="peerdown"/>
-        </methods>
-      </class> <!-- Sanity.TU09_TC_01 -->
-      <class name="Sanity.TU08_TC_02">
-        <methods>
-          <include name="HomPage"/>
-          <include name="pre"/>
-          <include name="report"/>
-          <include name="peerdown"/>
-        </methods>
-      </class> <!-- Sanity.TU08_TC_02 -->
-      <class name="Sanity.TU11_TC_01">
-        <methods>
-          <include name="TestHotelPage"/>
-          <include name="pre"/>
-          <include name="report"/>
-          <include name="peerdown"/>
-        </methods>
-      </class> <!-- Sanity.TU11_TC_01 -->
-      <class name="Sanity.TU01_TC_01">
-        <methods>
-          <include name="pre"/>
-          <include name="VerifyThePortal"/>
-          <include name="report"/>
-          <include name="peerdown"/>
-        </methods>
-      </class> <!-- Sanity.TU01_TC_01 -->
       <class name="Sanity.TU03_TC_01">
         <methods>
           <include name="pre"/>
@@ -44,14 +12,6 @@
           <include name="peerdown"/>
         </methods>
       </class> <!-- Sanity.TU03_TC_01 -->
-      <class name="Sanity.TU02_TC_01">
-        <methods>
-          <include name="pre"/>
-          <include name="report"/>
-          <include name="TestSignUp"/>
-          <include name="peerdown"/>
-        </methods>
-      </class> <!-- Sanity.TU02_TC_01 -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

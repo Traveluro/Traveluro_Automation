@@ -5,11 +5,10 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 
 import POM.POM_TU10_TC_02;
-import POM.POM_TU2_TC_01;
 import POM.POM_TU8_TC_05;
 import POM.POM_TU9_TC_01;
 
-public class TU09_TC_01 extends Base {
+public class TU09_TC_01 extends Base{
 @Test
 public void SearchPage()
 {

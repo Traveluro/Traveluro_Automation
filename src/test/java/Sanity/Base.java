@@ -69,12 +69,12 @@ import Utilities.ReadConfig;
 		event=new ExtentReports();
 		event.attachReporter(rep);
 		event.setSystemInfo("hostname", "Lenovo");
-		event.setSystemInfo("Encvironment", "QA");
+		event.setSystemInfo("Environment", "QA");
 		event.setSystemInfo("Test Phase", "Sanity");
 		event.setSystemInfo("Tester", "Abhilash Gowda");
 		
 		 rep.config().setAutoCreateRelativePathMedia(true);
-		 rep.config().setDocumentTitle("TravelUro AutomationTesting Report");
+		 rep.config().setDocumentTitle("TravelUro Automation Testing Report");
 		 rep.config().setReportName("Sanity Modules Report");
 		 rep.config().setTheme(Theme.DARK);
 	
@@ -94,7 +94,7 @@ import Utilities.ReadConfig;
 			driver=new FirefoxDriver();
 		}
 		driver.manage().window().maximize();
-		driver.get("https://traveluro.com/");
+		driver.get("https://www.traveluroqa.com/");
 		r=new ReadConfig();
 		FirstName=r.First_name();
 		LastNaame=r.Last_name();
@@ -131,6 +131,18 @@ import Utilities.ReadConfig;
 			logger4.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());
 			logger5.log(Status.FAIL, "Test Case Failed is "+result.getName());
 			logger5.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());
+			logger6.log(Status.FAIL, "Test Case Failed is "+result.getName());
+			logger6.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());
+			logger7.log(Status.FAIL, "Test Case Failed is "+result.getName());
+			logger7.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());
+			logger8.log(Status.FAIL, "Test Case Failed is "+result.getName());
+			logger8.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());
+			logger9.log(Status.FAIL, "Test Case Failed is "+result.getName());
+			logger9.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());
+			logger10.log(Status.FAIL, "Test Case Failed is "+result.getName());
+			logger10.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());
+			logger11.log(Status.FAIL, "Test Case Failed is "+result.getName());
+			logger11.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());
 		}else if(result.getStatus() == ITestResult.SKIP){
 			logger.log(Status.SKIP, "Test Case Skipped is "+result.getName());
 			logger1.log(Status.SKIP, "Test Case Skipped is "+result.getName());
@@ -138,13 +150,19 @@ import Utilities.ReadConfig;
 			logger3.log(Status.SKIP, "Test Case Skipped is "+result.getName());
 			logger4.log(Status.SKIP, "Test Case Skipped is "+result.getName());
 			logger5.log(Status.SKIP, "Test Case Skipped is "+result.getName());
+			logger6.log(Status.SKIP, "Test Case Skipped is "+result.getName());
+			logger7.log(Status.SKIP, "Test Case Skipped is "+result.getName());
+			logger8.log(Status.SKIP, "Test Case Skipped is "+result.getName());
+			logger9.log(Status.SKIP, "Test Case Skipped is "+result.getName());
+			logger10.log(Status.SKIP, "Test Case Skipped is "+result.getName());
+			logger11.log(Status.SKIP, "Test Case Skipped is "+result.getName());
 		}
 	}
 	@AfterMethod
 	public void peerdown()
 	{
 		event.flush();
-		//driver.quit();
+		driver.quit();
 	}
 public static void screenshot() {
 		

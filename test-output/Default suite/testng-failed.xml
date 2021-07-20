@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Sanity.TU08_TC_02">
+      <class name="Sanity.TU03_TC_01">
         <methods>
-          <include name="HomPage"/>
           <include name="pre"/>
+          <include name="TestVerifyLogin"/>
           <include name="report"/>
           <include name="peerdown"/>
         </methods>
-      </class> <!-- Sanity.TU08_TC_02 -->
+      </class> <!-- Sanity.TU03_TC_01 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

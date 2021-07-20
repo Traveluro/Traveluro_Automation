@@ -36,7 +36,7 @@ public void View() {
 }
 @FindBy(xpath = "(//*[text()='Book Now'])[1]")
 WebElement book;
-@FindBy(xpath = "(//*[text()='Free Cancellation By August 21'])[1]")
+@FindBy(xpath = "(*//*[text()='Free Cancellation By August 16'])[1]")
 WebElement cancel;
 public void BookNow() {
 	Set<String> h = driver.getWindowHandles();
@@ -45,7 +45,6 @@ public void BookNow() {
 	String parent=it.next();
 	String ChildWindowId=it.next();
 	driver.switchTo().window(ChildWindowId);
-	
 	WebDriverWait w=new WebDriverWait(driver, 30);
 	w.until(ExpectedConditions.elementToBeClickable(book)).click();
 	}
