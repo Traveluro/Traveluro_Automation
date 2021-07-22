@@ -7,7 +7,7 @@ import org.testng.ITestResult;
 public class Listener extends Base  implements ITestListener {
 	@Override  
 	public void onTestStart(ITestResult result) {  
-	 System.out.println("Test case started"+result.getName());
+	 System.out.println("Test case started: "+result.getName());
 	}  
 	  
 	@Override  
@@ -38,11 +38,11 @@ public class Listener extends Base  implements ITestListener {
 	  
 	@Override  
 	public void onStart(ITestContext context) {  
-	 System.out.println("Start the test case steps"+context.getName());
+	 System.out.println("Start the test case steps :"+context.getName());
 	}  
 	  
 	@Override  
 	public void onFinish(ITestContext context) {  
-	System.out.println("Finish the test case steps"+context.getName());
+	System.out.println("Finish the test case steps :"+context.getName());
 	}  
 }

@@ -10,10 +10,9 @@ import POM.POM_TU9_TC_01;
 
 public class TU09_TC_01 extends Base{
 @Test
-public void SearchPage()
+public void SearchPage() throws InterruptedException
 {
-try {
-	logger9 =event.createTest("Verify the system behaviour of the Search page view button");
+	logger9 =event.createTest("Verify the system behaviour of the Search page with click on view button");
 	POM_TU8_TC_05 p=new POM_TU8_TC_05(driver);
 	p.Destination();
 	logger9.log(Status.PASS, "Destination place is selected");
@@ -35,7 +34,5 @@ try {
 	p2.VerifyHotelpage(Hotelvalid);
 	logger9.log(Status.PASS, "Verified hotel page");
 	Thread.sleep(1000);
-}catch (Exception e) {
-System.out.println(e.getMessage());
-}}
+}
 }
