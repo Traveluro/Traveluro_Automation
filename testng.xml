@@ -9,7 +9,7 @@
   <parameter name="browser" value="chrome" />
     <classes>
        <class name="Sanity.TU01_TC_01"/>
-        
+        <class name="Sanity.TU02_TC_01"/>
       <class name="Sanity.TU03_TC_01"/>
       <class name="Sanity.TU08_TC_02"/>
       <class name="Sanity.TU09_TC_01"/>
@@ -21,7 +21,7 @@
   <parameter name="browser" value="FireFox" />
     <classes>
        <class name="Sanity.TU01_TC_01"/>
-        
+        <class name="Sanity.TU02_TC_01"/>
       <class name="Sanity.TU03_TC_01"/>
       <class name="Sanity.TU08_TC_02"/>
       <class name="Sanity.TU09_TC_01"/>
