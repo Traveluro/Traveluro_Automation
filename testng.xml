@@ -8,9 +8,11 @@
   <test thread-count="5" name="chrome Test">
   <parameter name="browser" value="chrome" />
     <classes>
+    
        <class name="Sanity.TU01_TC_01"/>
       <class name="Sanity.TU02_TC_01"/>
       <class name="Sanity.TU03_TC_01"/>
+      <class name="Sanity.TU08_TC_02"/>
     </classes>
   </test> <!-- Test -->
  
