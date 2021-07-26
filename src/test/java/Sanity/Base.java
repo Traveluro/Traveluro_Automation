@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -62,9 +63,11 @@ import Utilities.ReadConfig;
 	String LogonValid;
 	String Bookvalid;
 	String ConfirmationValid;
+	Logger log;
 	@BeforeTest
 	public void report()
 	{
+		 log= Logger.getLogger(Base.class);
 		rep=new ExtentHtmlReporter("./test-output/Sanity.html");
 		event=new ExtentReports();
 		event.attachReporter(rep);
