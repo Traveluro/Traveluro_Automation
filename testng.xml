@@ -9,7 +9,7 @@
   <parameter name="browser" value="chrome" />
     <classes>
        
-      <class name="Sanity.TU01_TC_01"/>
+      <class name="Sanity.TU02_TC_01"/>
       
     </classes>
   </test> <!-- Test -->

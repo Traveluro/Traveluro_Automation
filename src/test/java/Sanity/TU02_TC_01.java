@@ -46,5 +46,6 @@ public class TU02_TC_01 extends Base{
 		Thread.sleep(1000);
 		p.SignupExistError(SignupExistError);
 		logger2.log(Status.PASS, "Exist account error message is displayed");
+		Thread.sleep(1000);
 	}
 }
