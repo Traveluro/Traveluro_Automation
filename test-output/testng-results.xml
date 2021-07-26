@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-26T14:24:43 IST" name="Suite" finished-at="2021-07-26T14:26:09 IST" duration-ms="86107">
+  <suite started-at="2021-07-26T15:59:04 IST" name="Suite" finished-at="2021-07-26T15:59:35 IST" duration-ms="31391">
     <groups>
     </groups>
-    <test started-at="2021-07-26T14:24:43 IST" name="chrome Test" finished-at="2021-07-26T14:25:21 IST" duration-ms="38413">
-      <class name="Sanity.TU08_TC_02">
-        <test-method is-config="true" signature="report()[pri:0, instance:Sanity.TU08_TC_02@355ce81c]" started-at="2021-07-26T14:24:43 IST" name="report" finished-at="2021-07-26T14:24:43 IST" duration-ms="304" status="PASS">
+    <test started-at="2021-07-26T15:59:04 IST" name="chrome Test" finished-at="2021-07-26T15:59:19 IST" duration-ms="14953">
+      <class name="Sanity.TU03_TC_01">
+        <test-method is-config="true" signature="report()[pri:0, instance:Sanity.TU03_TC_01@4facf68f]" started-at="2021-07-26T15:59:04 IST" name="report" finished-at="2021-07-26T15:59:04 IST" duration-ms="252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU08_TC_02@355ce81c]" started-at="2021-07-26T14:24:43 IST" name="pre" finished-at="2021-07-26T14:24:50 IST" duration-ms="7230" status="PASS">
+        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU03_TC_01@4facf68f]" started-at="2021-07-26T15:59:04 IST" name="pre" finished-at="2021-07-26T15:59:11 IST" duration-ms="7134" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,23 +22,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pre -->
-        <test-method signature="HomPage()[pri:0, instance:Sanity.TU08_TC_02@355ce81c]" started-at="2021-07-26T14:24:50 IST" name="HomPage" finished-at="2021-07-26T14:25:21 IST" duration-ms="30051" status="PASS">
+        <test-method signature="TestVerifyLogin()[pri:0, instance:Sanity.TU03_TC_01@4facf68f]" started-at="2021-07-26T15:59:11 IST" name="TestVerifyLogin" finished-at="2021-07-26T15:59:18 IST" duration-ms="6243" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HomPage -->
-        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU08_TC_02@355ce81c]" started-at="2021-07-26T14:25:21 IST" name="peerdown" finished-at="2021-07-26T14:25:21 IST" duration-ms="791" status="PASS">
+        </test-method> <!-- TestVerifyLogin -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU03_TC_01@4facf68f]" started-at="2021-07-26T15:59:18 IST" name="peerdown" finished-at="2021-07-26T15:59:19 IST" duration-ms="1276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- peerdown -->
-      </class> <!-- Sanity.TU08_TC_02 -->
+      </class> <!-- Sanity.TU03_TC_01 -->
     </test> <!-- chrome Test -->
-    <test started-at="2021-07-26T14:25:21 IST" name="Firefox Test" finished-at="2021-07-26T14:26:09 IST" duration-ms="47662">
-      <class name="Sanity.TU08_TC_02">
-        <test-method is-config="true" signature="report()[pri:0, instance:Sanity.TU08_TC_02@11bd0f3b]" started-at="2021-07-26T14:25:21 IST" name="report" finished-at="2021-07-26T14:25:21 IST" duration-ms="2" status="PASS">
+    <test started-at="2021-07-26T15:59:19 IST" name="Firefox Test" finished-at="2021-07-26T15:59:35 IST" duration-ms="16393">
+      <class name="Sanity.TU03_TC_01">
+        <test-method is-config="true" signature="report()[pri:0, instance:Sanity.TU03_TC_01@1a451d4d]" started-at="2021-07-26T15:59:19 IST" name="report" finished-at="2021-07-26T15:59:19 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU08_TC_02@11bd0f3b]" started-at="2021-07-26T14:25:21 IST" name="pre" finished-at="2021-07-26T14:25:33 IST" duration-ms="11543" status="PASS">
+        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU03_TC_01@1a451d4d]" started-at="2021-07-26T15:59:19 IST" name="pre" finished-at="2021-07-26T15:59:28 IST" duration-ms="8582" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,15 +49,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pre -->
-        <test-method signature="HomPage()[pri:0, instance:Sanity.TU08_TC_02@11bd0f3b]" started-at="2021-07-26T14:25:33 IST" name="HomPage" finished-at="2021-07-26T14:26:08 IST" duration-ms="35134" status="PASS">
+        <test-method signature="TestVerifyLogin()[pri:0, instance:Sanity.TU03_TC_01@1a451d4d]" started-at="2021-07-26T15:59:28 IST" name="TestVerifyLogin" finished-at="2021-07-26T15:59:34 IST" duration-ms="6345" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HomPage -->
-        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU08_TC_02@11bd0f3b]" started-at="2021-07-26T14:26:08 IST" name="peerdown" finished-at="2021-07-26T14:26:09 IST" duration-ms="979" status="PASS">
+        </test-method> <!-- TestVerifyLogin -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU03_TC_01@1a451d4d]" started-at="2021-07-26T15:59:34 IST" name="peerdown" finished-at="2021-07-26T15:59:35 IST" duration-ms="1460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- peerdown -->
-      </class> <!-- Sanity.TU08_TC_02 -->
+      </class> <!-- Sanity.TU03_TC_01 -->
     </test> <!-- Firefox Test -->
   </suite> <!-- Suite -->
 </testng-results>

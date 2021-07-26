@@ -63,11 +63,11 @@ import Utilities.ReadConfig;
 	String LogonValid;
 	String Bookvalid;
 	String ConfirmationValid;
-	Logger log;
+
 	@BeforeTest
 	public void report()
 	{
-		 log= Logger.getLogger(Base.class);
+		 
 		rep=new ExtentHtmlReporter("./test-output/Sanity.html");
 		event=new ExtentReports();
 		event.attachReporter(rep);
