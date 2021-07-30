@@ -33,6 +33,6 @@ public void SearchPage() throws InterruptedException
 	POM_TU9_TC_01 p2=new POM_TU9_TC_01(driver);
 	p2.VerifyHotelpage(Hotelvalid);
 	logger9.log(Status.PASS, "Verified hotel page");
-	Thread.sleep(1000);
+	Thread.sleep(3000);
 }
 }

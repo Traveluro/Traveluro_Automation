@@ -43,9 +43,9 @@ public class TU02_TC_01 extends Base{
 		Thread.sleep(1000);
 		p.Create_account();
 		logger2.log(Status.PASS, "Privacy and Policy Check box is selected");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		p.SignupExistError(SignupExistError);
 		logger2.log(Status.PASS, "Exist account error message is displayed");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 	}
 }

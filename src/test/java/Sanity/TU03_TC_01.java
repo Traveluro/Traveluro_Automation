@@ -29,7 +29,7 @@ public void TestVerifyLogin() throws InterruptedException {
 		Thread.sleep(1000);
 		p1.VerifyLogOn(LogonValid);
 		logger3.log(Status.PASS, "Validated the logon the user");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 	
 }
 }

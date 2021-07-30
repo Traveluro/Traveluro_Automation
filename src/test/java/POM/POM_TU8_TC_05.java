@@ -75,8 +75,7 @@ WebElement go;
 public void GO() {
 	go.click();
 }
-@FindBy(xpath = "//*[text()='California']")
-WebElement loc;
+
 public void VerifySearchedLocation(String E) {
 	try {
 	String A=driver.getCurrentUrl();
@@ -88,7 +87,7 @@ public void VerifySearchedLocation(String E) {
 	{
 		System.out.println("Verified Fail:-"+A);
 	}
-	Thread.sleep(2000);
+	Thread.sleep(3000);
 	}catch (Exception e) {
 		System.out.println(e.getMessage());
 	}

@@ -27,6 +27,6 @@ public void HomPage() throws InterruptedException
 		Thread.sleep(1000);
 		p.VerifySearchedLocation(SearchValid);
 		logger8.log(Status.PASS, "Verified the search page");
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 }
 }

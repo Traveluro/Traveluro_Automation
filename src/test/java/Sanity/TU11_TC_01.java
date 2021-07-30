@@ -36,6 +36,6 @@ public void TestHotelPage() throws InterruptedException
 	POM_TU11_TC_01 p2=new POM_TU11_TC_01(driver);
 	p2.VarifyBookpage(Bookvalid);
 	logger11.log(Status.PASS, "Verified Booking page");
-	Thread.sleep(1000);
+	Thread.sleep(3000);
 }
 }
