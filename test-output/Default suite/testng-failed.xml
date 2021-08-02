@@ -7,7 +7,6 @@
         <methods>
           <include name="HomPage"/>
           <include name="pre"/>
-          <include name="report"/>
           <include name="peerdown"/>
         </methods>
       </class> <!-- Sanity.TU08_TC_02 -->

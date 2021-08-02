@@ -30,7 +30,9 @@ WebElement dept;
 @FindBy(xpath = "//div")
 List<WebElement> list;
 public void Destination() {
-	dept.click();
+	
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	js.executeScript("arguments[0].click()", dept);
 	dept.sendKeys("califor");
 	
 	for(int i=0; i<list.size();i++)
@@ -43,7 +45,9 @@ public void Destination() {
 			list.get(i).click();
 				}
 		
+		
 	}
+	
 	
 }
 @FindBy(xpath = "//td")
