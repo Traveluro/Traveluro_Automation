@@ -21,7 +21,7 @@ public class Listener extends Base  implements ITestListener {
 	
 	System.out.println("Failure of test cases and its details are : "+result.getName());  
 	screenshot();
-	getResult(result);
+	
 	}  
 	  
 	@Override  
