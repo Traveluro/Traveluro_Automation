@@ -9,12 +9,32 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">chrome Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">42,110</td><td></td><td></td></tr>
+<tr><td><a href="#t0">chrome Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">284,501</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">firefox Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11,193</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">295,694</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chrome Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Sanity.TU01_TC_01</td><td><a href="#m0">VerifyThePortal</a></td><td rowspan="1">1627995016443</td><td rowspan="1">34</td></tr><tr class="passedodd"><td rowspan="1">Sanity.TU02_TC_01</td><td><a href="#m1">TestSignUp</a></td><td rowspan="1">1627995023619</td><td rowspan="1">13203</td></tr><tr class="passedeven"><td rowspan="1">Sanity.TU03_TC_01</td><td><a href="#m2">TestVerifyLogin</a></td><td rowspan="1">1627995044025</td><td rowspan="1">6622</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chrome Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Sanity.TU10_TC_02</td><td><a href="#m0">VerifyWithBooking</a></td><td rowspan="1">1628069384570</td><td rowspan="1">273524</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">firefox Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Sanity.TU10_TC_02</td><td><a href="#m1">peerdown</a></td><td rowspan="1">1628069669864</td><td rowspan="1">902</td></tr><tr><th colspan="4">firefox Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Sanity.TU10_TC_02</td><td><a href="#m2">VerifyWithBooking</a></td><td rowspan="1">1628069669814</td><td rowspan="1">48</td></tr></tbody>
 </table>
-<h2>chrome Test</h2><h3 id="m0">Sanity.TU01_TC_01#VerifyThePortal</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Sanity.TU02_TC_01#TestSignUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Sanity.TU03_TC_01#TestVerifyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>chrome Test</h2><h3 id="m0">Sanity.TU10_TC_02#VerifyWithBooking</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>firefox Test</h2><h3 id="m1">Sanity.TU10_TC_02#peerdown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;NOTHING&apos;, ip: &apos;192.168.2.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210622155641, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 7568, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61dd59e6-d401-48f8-aea4-1db06c20de9d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:448)
+	at Sanity.Base.peerdown(Base.java:178)
+	at Sanity.TU10_TC_02.peerdown(TU10_TC_02.java:1)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Sanity.TU10_TC_02#VerifyWithBooking</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
