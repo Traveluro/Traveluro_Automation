@@ -1,4 +1,4 @@
-package Sanity;
+package Base_Header;
 
 import java.io.File;
 import java.io.IOException;
@@ -65,13 +65,13 @@ import Utilities.ReadConfig;
 	String LogonValid;
 	String Bookvalid;
 	String ConfirmationValid;
-	static Logger log;
+	///public static Logger log;
 
 	@BeforeTest
 	public void report()
 	{
-		  log = Logger.getLogger(Base.class);
-		  PropertyConfigurator.configure("./log4j.properties");
+		//  log = Logger.getLogger(Base.class);
+		 // PropertyConfigurator.configure("./log4j.properties");
 		rep=new ExtentHtmlReporter("./test-output/Sanity.html");
 		event=new ExtentReports();
 		event.attachReporter(rep);
@@ -107,7 +107,7 @@ import Utilities.ReadConfig;
 		}
 		driver.manage().window().maximize();
 		driver.get("https://traveluro.com/");
-		log.info("Traveluro home page is displayed");
+	//	log.info("Traveluro home page is displayed");
 		r=new ReadConfig();
 		FirstName=r.First_name();
 		LastNaame=r.Last_name();

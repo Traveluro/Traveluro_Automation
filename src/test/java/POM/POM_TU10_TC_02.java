@@ -195,7 +195,7 @@ public void ValidConfirmation(String E) {
 		{
 			System.out.println("Verified Fail:-"+A);
 		}
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		}catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
