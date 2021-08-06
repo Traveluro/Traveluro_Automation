@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
+import Header_Base.Base;
 import POM.POM_Booking_errors;
 import POM.POM_TU10_TC_02;
 import POM.POM_TU8_TC_05;
@@ -43,7 +44,7 @@ public void TestVerifyErrorWithHolderName() throws InterruptedException
 	p1.Email(Email);
 	logger11.log(Status.PASS, "Email address is entered");
 	Thread.sleep(1000);
-	p1.ConfirmMail(ConfirmEmail);
+	p1.ConfirmMail(Email);
 	logger11.log(Status.PASS, "Confirm Email address is entered");
 	Thread.sleep(1000);
 	p1.CountryFlag();

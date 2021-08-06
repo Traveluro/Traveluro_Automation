@@ -4,11 +4,12 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
+import Header_Base.Base;
 import POM.POM_TU8_TC_05;
 
 public class TU08_TC_02 extends Base {
 @Test
-public void HomePage() throws InterruptedException
+public void HomPage() throws InterruptedException
 {
 	
 		logger8=event.createTest("Verifing the home page ");
