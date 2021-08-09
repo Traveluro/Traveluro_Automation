@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+<testng-results ignored="10" total="22" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-05T17:51:55 IST" name="Suite" finished-at="2021-08-05T17:52:23 IST" duration-ms="28672">
+  <suite started-at="2021-08-09T17:30:39 IST" name="Suite" finished-at="2021-08-09T17:37:12 IST" duration-ms="392486">
     <groups>
     </groups>
-    <test started-at="2021-08-05T17:51:55 IST" name="chrome Test" finished-at="2021-08-05T17:52:23 IST" duration-ms="28672">
-      <class name="Sanity.TU02_TC_01">
-        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU02_TC_01@31c88ec8]" started-at="2021-08-05T17:52:03 IST" name="pre" finished-at="2021-08-05T17:52:09 IST" duration-ms="5970" status="PASS">
+    <test started-at="2021-08-09T17:30:39 IST" name="chrome Test" finished-at="2021-08-09T17:33:45 IST" duration-ms="185317">
+      <class name="Sanity.TU09_TC_01">
+        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU09_TC_01@35ef1869]" started-at="2021-08-09T17:32:03 IST" name="pre" finished-at="2021-08-09T17:32:09 IST" duration-ms="5637" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,21 +18,63 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pre -->
-        <test-method signature="TestSignUp()[pri:0, instance:Sanity.TU02_TC_01@31c88ec8]" started-at="2021-08-05T17:52:09 IST" name="TestSignUp" finished-at="2021-08-05T17:52:22 IST" duration-ms="13241" status="PASS">
+        <test-method signature="SearchPage()[pri:0, instance:Sanity.TU09_TC_01@35ef1869]" started-at="2021-08-09T17:32:09 IST" name="SearchPage" finished-at="2021-08-09T17:32:56 IST" duration-ms="46895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchPage -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU09_TC_01@35ef1869]" started-at="2021-08-09T17:32:56 IST" name="peerdown" finished-at="2021-08-09T17:32:56 IST" duration-ms="925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- Sanity.TU09_TC_01 -->
+      <class name="Sanity.TU08_TC_02">
+        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU08_TC_02@3c407114]" started-at="2021-08-09T17:31:23 IST" name="pre" finished-at="2021-08-09T17:31:29 IST" duration-ms="5972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="HomPage()[pri:0, instance:Sanity.TU08_TC_02@3c407114]" started-at="2021-08-09T17:31:29 IST" name="HomPage" finished-at="2021-08-09T17:32:02 IST" duration-ms="33411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomPage -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU08_TC_02@3c407114]" started-at="2021-08-09T17:32:02 IST" name="peerdown" finished-at="2021-08-09T17:32:03 IST" duration-ms="856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- Sanity.TU08_TC_02 -->
+      <class name="Sanity.TU02_TC_01">
+        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU02_TC_01@647e447]" started-at="2021-08-09T17:30:48 IST" name="pre" finished-at="2021-08-09T17:30:54 IST" duration-ms="6436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestSignUp()[pri:0, instance:Sanity.TU02_TC_01@647e447]" started-at="2021-08-09T17:30:54 IST" name="TestSignUp" finished-at="2021-08-09T17:31:08 IST" duration-ms="13269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestSignUp -->
-        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU02_TC_01@31c88ec8]" started-at="2021-08-05T17:52:22 IST" name="peerdown" finished-at="2021-08-05T17:52:23 IST" duration-ms="957" status="PASS">
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU02_TC_01@647e447]" started-at="2021-08-09T17:31:08 IST" name="peerdown" finished-at="2021-08-09T17:31:09 IST" duration-ms="872" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- peerdown -->
       </class> <!-- Sanity.TU02_TC_01 -->
       <class name="Sanity.TU01_TC_01">
-        <test-method is-config="true" signature="report()[pri:0, instance:Sanity.TU01_TC_01@41e36e46]" started-at="2021-08-05T17:51:55 IST" name="report" finished-at="2021-08-05T17:51:55 IST" duration-ms="318" status="PASS">
+        <test-method is-config="true" signature="report()[pri:0, instance:Sanity.TU01_TC_01@3daa422a]" started-at="2021-08-09T17:30:39 IST" name="report" finished-at="2021-08-09T17:30:40 IST" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU01_TC_01@41e36e46]" started-at="2021-08-05T17:51:55 IST" name="pre" finished-at="2021-08-05T17:52:02 IST" duration-ms="6845" status="PASS">
+        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU01_TC_01@3daa422a]" started-at="2021-08-09T17:30:40 IST" name="pre" finished-at="2021-08-09T17:30:47 IST" duration-ms="6911" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,15 +85,189 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pre -->
-        <test-method signature="VerifyThePortal()[pri:0, instance:Sanity.TU01_TC_01@41e36e46]" started-at="2021-08-05T17:52:02 IST" name="VerifyThePortal" finished-at="2021-08-05T17:52:02 IST" duration-ms="35" status="PASS">
+        <test-method signature="VerifyThePortal()[pri:0, instance:Sanity.TU01_TC_01@3daa422a]" started-at="2021-08-09T17:30:47 IST" name="VerifyThePortal" finished-at="2021-08-09T17:30:47 IST" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyThePortal -->
-        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU01_TC_01@41e36e46]" started-at="2021-08-05T17:52:02 IST" name="peerdown" finished-at="2021-08-05T17:52:03 IST" duration-ms="1249" status="PASS">
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU01_TC_01@3daa422a]" started-at="2021-08-09T17:30:47 IST" name="peerdown" finished-at="2021-08-09T17:30:48 IST" duration-ms="1344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- peerdown -->
       </class> <!-- Sanity.TU01_TC_01 -->
+      <class name="Sanity.TU11_TC_01">
+        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU11_TC_01@c33b74f]" started-at="2021-08-09T17:32:56 IST" name="pre" finished-at="2021-08-09T17:33:02 IST" duration-ms="5843" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestHotelPage()[pri:0, instance:Sanity.TU11_TC_01@c33b74f]" started-at="2021-08-09T17:33:02 IST" name="TestHotelPage" finished-at="2021-08-09T17:33:44 IST" duration-ms="41410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHotelPage -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU11_TC_01@c33b74f]" started-at="2021-08-09T17:33:44 IST" name="peerdown" finished-at="2021-08-09T17:33:45 IST" duration-ms="972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- Sanity.TU11_TC_01 -->
+      <class name="Sanity.TU03_TC_01">
+        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU03_TC_01@41fbdac4]" started-at="2021-08-09T17:31:09 IST" name="pre" finished-at="2021-08-09T17:31:15 IST" duration-ms="6435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestVerifyLogin()[pri:0, instance:Sanity.TU03_TC_01@41fbdac4]" started-at="2021-08-09T17:31:15 IST" name="TestVerifyLogin" finished-at="2021-08-09T17:31:22 IST" duration-ms="6743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestVerifyLogin -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU03_TC_01@41fbdac4]" started-at="2021-08-09T17:31:22 IST" name="peerdown" finished-at="2021-08-09T17:31:23 IST" duration-ms="1028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- Sanity.TU03_TC_01 -->
     </test> <!-- chrome Test -->
+    <test started-at="2021-08-09T17:33:45 IST" name="FireFox Test" finished-at="2021-08-09T17:37:12 IST" duration-ms="207142">
+      <class name="Sanity.TU09_TC_01">
+        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU09_TC_01@359f7cdf]" started-at="2021-08-09T17:35:19 IST" name="pre" finished-at="2021-08-09T17:35:29 IST" duration-ms="9456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="SearchPage()[pri:0, instance:Sanity.TU09_TC_01@359f7cdf]" started-at="2021-08-09T17:35:29 IST" name="SearchPage" finished-at="2021-08-09T17:36:12 IST" duration-ms="43007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchPage -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU09_TC_01@359f7cdf]" started-at="2021-08-09T17:36:12 IST" name="peerdown" finished-at="2021-08-09T17:36:14 IST" duration-ms="2502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- Sanity.TU09_TC_01 -->
+      <class name="Sanity.TU08_TC_02">
+        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU08_TC_02@4f18837a]" started-at="2021-08-09T17:34:34 IST" name="pre" finished-at="2021-08-09T17:34:42 IST" duration-ms="7870" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="HomPage()[pri:0, instance:Sanity.TU08_TC_02@4f18837a]" started-at="2021-08-09T17:34:42 IST" name="HomPage" finished-at="2021-08-09T17:35:18 IST" duration-ms="36041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomPage -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU08_TC_02@4f18837a]" started-at="2021-08-09T17:35:18 IST" name="peerdown" finished-at="2021-08-09T17:35:19 IST" duration-ms="1365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- Sanity.TU08_TC_02 -->
+      <class name="Sanity.TU02_TC_01">
+        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU02_TC_01@5ffead27]" started-at="2021-08-09T17:33:56 IST" name="pre" finished-at="2021-08-09T17:34:04 IST" duration-ms="8791" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestSignUp()[pri:0, instance:Sanity.TU02_TC_01@5ffead27]" started-at="2021-08-09T17:34:04 IST" name="TestSignUp" finished-at="2021-08-09T17:34:17 IST" duration-ms="13015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSignUp -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU02_TC_01@5ffead27]" started-at="2021-08-09T17:34:17 IST" name="peerdown" finished-at="2021-08-09T17:34:18 IST" duration-ms="1137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- Sanity.TU02_TC_01 -->
+      <class name="Sanity.TU01_TC_01">
+        <test-method is-config="true" signature="report()[pri:0, instance:Sanity.TU01_TC_01@694abbdc]" started-at="2021-08-09T17:33:45 IST" name="report" finished-at="2021-08-09T17:33:45 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU01_TC_01@694abbdc]" started-at="2021-08-09T17:33:45 IST" name="pre" finished-at="2021-08-09T17:33:54 IST" duration-ms="9689" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="VerifyThePortal()[pri:0, instance:Sanity.TU01_TC_01@694abbdc]" started-at="2021-08-09T17:33:54 IST" name="VerifyThePortal" finished-at="2021-08-09T17:33:54 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyThePortal -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU01_TC_01@694abbdc]" started-at="2021-08-09T17:33:54 IST" name="peerdown" finished-at="2021-08-09T17:33:56 IST" duration-ms="1153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- Sanity.TU01_TC_01 -->
+      <class name="Sanity.TU11_TC_01">
+        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU11_TC_01@1fa268de]" started-at="2021-08-09T17:36:14 IST" name="pre" finished-at="2021-08-09T17:36:25 IST" duration-ms="10381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestHotelPage()[pri:0, instance:Sanity.TU11_TC_01@1fa268de]" started-at="2021-08-09T17:36:25 IST" name="TestHotelPage" finished-at="2021-08-09T17:37:10 IST" duration-ms="45600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHotelPage -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU11_TC_01@1fa268de]" started-at="2021-08-09T17:37:10 IST" name="peerdown" finished-at="2021-08-09T17:37:12 IST" duration-ms="1420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- Sanity.TU11_TC_01 -->
+      <class name="Sanity.TU03_TC_01">
+        <test-method is-config="true" signature="pre(java.lang.String)[pri:0, instance:Sanity.TU03_TC_01@6356695f]" started-at="2021-08-09T17:34:18 IST" name="pre" finished-at="2021-08-09T17:34:26 IST" duration-ms="7613" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method signature="TestVerifyLogin()[pri:0, instance:Sanity.TU03_TC_01@6356695f]" started-at="2021-08-09T17:34:26 IST" name="TestVerifyLogin" finished-at="2021-08-09T17:34:33 IST" duration-ms="6996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestVerifyLogin -->
+        <test-method is-config="true" signature="peerdown()[pri:0, instance:Sanity.TU03_TC_01@6356695f]" started-at="2021-08-09T17:34:33 IST" name="peerdown" finished-at="2021-08-09T17:34:34 IST" duration-ms="1092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerdown -->
+      </class> <!-- Sanity.TU03_TC_01 -->
+    </test> <!-- FireFox Test -->
   </suite> <!-- Suite -->
 </testng-results>
